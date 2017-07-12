@@ -142,6 +142,66 @@
                   						</div>
                 					</div>
                 				</a>
+                				<div class="wrapper-dropdown-2" id="dd0" tabindex="1">
+                  					<div class="button-more" style="left:177px; width: 100px;">
+                    					<div class="nav-buttons-more">
+                      						<p class="passive">MORE &#9660;</p>
+                    					</div>
+                  					</div>
+                  					<div id="dropdown-fixed" style="position:relative; top: 0px; width: 264px; left: 50%; margin-left: -128px; overflow:visible; z-index:95;">
+                    					<div class="dropdown-holder">
+                      						<ul class="dropdown" style=" top:45px; z-index:95;">
+                        						<li style="font-size:22px">
+                          							<center>
+                            							<a href="#">Calendar</a>
+                          							</center>
+                        						</li>
+                        						<li style="font-size:22px">
+                          							<center>
+                            							<a href="#">Members</a>
+                          							</center>
+                        						</li>
+                        						<li style="font-size:22px">
+                          							<center>
+                            							<a href="#">Events</a>
+                          							</center>
+                        						</li>
+                        						<li style="font-size:22px">
+                          							<center>
+                            							<a href="#">Contact Us</a>
+                          							</center>
+                        						</li>
+                      						</ul>
+                    					</div>
+                  					</div>
+                  					<script type="text/javascript">
+                     					function DropDown(el) 
+                     					{
+                        					this.dd = el;
+                        					this.initEvents();
+                      					}
+                      					DropDown.prototype = 
+                      					{
+                        					initEvents : function() 
+                        					{
+                          						var obj = this;
+                          						obj.dd.on('click', function(event)
+                             					{
+                                					$(this).toggleClass('active');
+                                  					event.stopPropagation();
+                             					});  
+                        					}
+                      					}
+                      					$(function() 
+                      					{
+                        					var dd = new DropDown( $('#dd0') );
+                        					$(document).click(function() 
+                        					{
+                          						$('.wrapper-dropdown-2').removeClass('active');
+                        					});
+                      					});
+                  					</script>
+                				</div>
                 				<div class="menu-accent" style="left: 61px;">
                 				</div>
                 				<div class="menu-accent" style="left: 175px;">
