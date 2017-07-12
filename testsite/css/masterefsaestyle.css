@@ -438,6 +438,30 @@ p {
 .button-more {
     visibility: visible;
 }
+.menu-mid {
+        position: absolute;
+        left:50%;
+        margin-left: -132px;
+        top: 1px;
+        height: 49px;
+        width: 264px;
+        text-align: center;
+    }
+    .button-3 {
+        visibility: hidden;
+    }
+    .button-4{
+       visibility: hidden; 
+    }
+    .button-5{
+        visibility: hidden; 
+    }
+    .button-more {
+        visibility: visible;
+    }
+    .menu-accent-hiding{
+        visibility: hidden;
+    }
 @media only screen and (min-width: 485px) {
     .nav-buttons > .passive:hover{
         color: rgb(163, 35, 0);
