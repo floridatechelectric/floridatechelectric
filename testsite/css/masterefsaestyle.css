@@ -414,7 +414,7 @@ p {
     right: 0;
 }
 .wrapper-dropdown-2{
-    margin-right: 75px;
+    /*margin-right: 75px;*/
     position: relative;
     outline: none;
     cursor: pointer;
