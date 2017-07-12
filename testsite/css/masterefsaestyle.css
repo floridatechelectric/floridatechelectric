@@ -355,6 +355,29 @@ p {
     outline: none;
     cursor: pointer;
 }
+.menu-accent-bottom {
+    position: relative;
+    opacity: 1;
+    width: 100%;
+    left: 0px;
+    top: 48px;
+    height: 3px;
+    background-color: rgb(163, 35, 0);
+    z-index: 94;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*search function*/
 .cd-main-header {
   -webkit-transform: translateZ(0);
