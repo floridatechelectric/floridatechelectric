@@ -205,7 +205,7 @@ a.button {
 @media screen and (max-width: 1400px)
 {
     .efsae-header-image {
-        background: url(../images/header-background.jpg) no-repeat 0px -2300px;
+        background: url(../images/header-background.jpg) no-repeat 0px -230px;
             background-size: cover;
     }
 }
