@@ -115,6 +115,7 @@ a.button {
 }
 .efsae-header{
     z-index: 90;
+    visibility: hidden;
 }
 .efsae-header-accent{
     z-index: 90;
@@ -160,7 +161,7 @@ a.button {
     min-width: 345px;
 }
 .efsae-header-image {
-    background: url(../images/header-background.jpg) no-repeat 0px 65px;
+    background: url(../images/header-background.jpg) no-repeat 0px 0px;
     background-size: contain;
     z-index: 80;
     -webkit-background-size: contain;
