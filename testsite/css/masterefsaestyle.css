@@ -431,6 +431,8 @@ p {
 }
 .button-more {
     visibility: hidden;
+    position: absolute;
+    top: 12px;
     left: 177px;
     width: 100px;
 }
