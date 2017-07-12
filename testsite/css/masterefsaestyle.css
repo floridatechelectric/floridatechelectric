@@ -160,7 +160,7 @@ a.button {
     min-width: 345px;
 }
 .efsae-header-image {
-    background: url(../images/pic.jpg) no-repeat 0px 65px;
+    background: url(../images/header-background.jpg) no-repeat 0px 65px;
     background-size: contain;
     z-index: 80;
     -webkit-background-size: contain;
