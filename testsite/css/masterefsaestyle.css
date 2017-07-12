@@ -63,7 +63,7 @@
     border-radius: 16px;
 }
 .social-icon i.icon:hover {
-    background: #a32300 url(../images/img-sprite.png) no-repeat 0px 0px;
+    background: #4fc74f url(../images/img-sprite.png) no-repeat 0px 0px;
     transform: rotateY(360deg);
 }
 .social-icon i.icon {
@@ -80,14 +80,14 @@
     background-position: -64px 0px;
 }
 .social-icon i.icon2:hover {
-    background: #a32300 url(../images/img-sprite.png) no-repeat -64px 0px;
+    background: #4fc74f url(../images/img-sprite.png) no-repeat -64px 0px;
     transform: rotateY(360deg);
 }
 .social-icon i.icon3 {
     background-position: -96px 0px;
 }
 .social-icon i.icon3:hover {
-    background: #a32300 url(../images/img-sprite.png) no-repeat -96px 0px;
+    background: #4fc74f url(../images/img-sprite.png) no-repeat -96px 0px;
     transform: rotateY(360deg);
 }
 .profile-menu {
@@ -124,7 +124,7 @@ a.button {
     left: 0px;
     top: 56px;
     height: 10px;
-    background-color: rgb(36, 0, 181);
+    background-color: #4fc74f;
 }
 .efsae-header-background {
     opacity: 1;
@@ -200,7 +200,7 @@ a.button {
 }
 .menu-left i {
     font-size: 22px;
-    color: #CCCCCC;
+    color: #666;
 }
 .menu-mid {
     overflow: visible;
@@ -237,7 +237,7 @@ p {
     transition: .5s all;
 }
 .nav-buttons > .passive {
-    color:#434343; 
+    color:#666; 
 }
 .nav-buttons-more > p{
     font-size:18px;  
@@ -246,20 +246,20 @@ p {
     margin-bottom:3px;
 }
 .nav-buttons-more > .active {
-    color: rgb(163, 35, 0);
+    color: #4fc74f;
 }
 .nav-buttons-more > .passive {
-    color:#434343; 
+    color:#666; 
 }
 @media only screen and (min-width: 485px) {
     .nav-buttons > .passive:hover{
-        color: rgb(163, 35, 0);
+        color: #4fc74f;
     }
     .nav-buttons:hover:before{
         width: 100%;
     }
     .nav-buttons-more > .passive:hover{
-        color: rgb(163, 35, 0);
+        color: #4fc74f;
     }
     .nav-buttons-more:hover:before{
         width: 72%;
@@ -362,7 +362,7 @@ p {
     left: 0px;
     top: 48px;
     height: 3px;
-    background-color: rgb(163, 35, 0);
+    background-color: #4fc74f;
     z-index: 94;
 }
 
@@ -584,7 +584,7 @@ p {
 /*button effects*/
 a.button {
     font-size: 1em;
-    background: #434343;
+    background: #666;
     text-decoration: none;
     padding: 0.5em;
     color: #fff;
@@ -603,7 +603,7 @@ a.button {
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
-    background: #e1e1e1;
+    background: #4fc74f;
     -webkit-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 0.3s;
