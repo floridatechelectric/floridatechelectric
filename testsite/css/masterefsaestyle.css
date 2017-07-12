@@ -177,24 +177,28 @@ a.button {
 {
     .efsae-header-image {
         background: url(../images/header-background.jpg) no-repeat 0px -150px;
+            background-size: cover;
     }
 }
 @media screen and (min-width: 860px)
 {
     .efsae-header-image {
         background: url(../images/header-background.jpg) no-repeat 0px -120px;
+        background-size: cover;
     }
 }
 @media screen and (min-width: 700px)
 {
     .efsae-header-image {
         background: url(../images/header-background.jpg) no-repeat 0px -100px;
+        background-size: cover;
     }
 }
 @media screen and (min-width: 480px)
 {
     .efsae-header-image {
         background: url(../images/header-background.jpg) no-repeat 0px -66px;
+        background-size: cover;
     }
 }
 .sticky-anchor {
