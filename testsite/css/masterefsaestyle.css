@@ -203,7 +203,7 @@ a.button {
 .navigation-menu-stuck {
     z-index: 90;
     padding: 0px 0;
-    background:  rgb(255, 255, 255);
+    background:  rgb(0, 0, 0);
 }
 .navigation-menu {
     position: relative;
@@ -211,7 +211,7 @@ a.button {
     left: 0px;
     height: 51px;
     width: 100%;
-    background-color: #fff;
+    background-color: #000;
 }
 .menu-left {
     position: relative;
