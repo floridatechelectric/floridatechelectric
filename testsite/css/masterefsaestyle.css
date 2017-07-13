@@ -512,13 +512,13 @@ p {
         color: rgb(163, 35, 0);
     }
     .nav-buttons:hover:before{
-        width: 100%;
+        /*width: 100%;*/
     }
     .nav-buttons-more > .passive:hover{
         color: rgb(163, 35, 0);
     }
     .nav-buttons-more:hover:before{
-        width: 72%;
+        /*width: 72%;*/
     }
 }
 .wrapper-dropdown-2, .wrapper-dropdown-3, .wrapper-dropdown-1, .wrapper-dropdown-4, .wrapper-dropdown-5, .wrapper-dropdown-6 {
@@ -548,7 +548,6 @@ p {
 }
 .wrapper-dropdown .dropdown li {
     position: relative;
-    /* Enable absolute positioning for checkboxes */
 }
 .wrapper-dropdown-1 .dropdown li, .wrapper-dropdown-2 .dropdown li, .wrapper-dropdown-3 .dropdown li, .wrapper-dropdown-4 .dropdown li, .wrapper-dropdown-5 .dropdown li, .wrapper-dropdown-6 .dropdown li {
     border-bottom: 1px solid #F0F0F0;
