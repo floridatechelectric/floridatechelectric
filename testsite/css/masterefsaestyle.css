@@ -339,10 +339,12 @@ p {
     .nav-buttons > .passive:hover{
         color: #999;
         top: 10px;
+        transition: .2s all;
     }
     .nav-buttons > .active:hover{
         color: #999;
         top: 10px;
+        transition: .2s all;
     }
     .nav-buttons:hover:before{
         /*width: 100%;*/
@@ -350,10 +352,12 @@ p {
     .nav-buttons-more > .passive:hover{
         color: #999;
         top: 10px;
+        transition: .2s all;
     }
     .nav-buttons-more > .active:hover{
         color: #999;
         top: 10px;
+        transition: .2s all;
     }
     .nav-buttons-more:hover:before{
         /*width: 72%;*/
