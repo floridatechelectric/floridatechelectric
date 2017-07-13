@@ -339,10 +339,16 @@ p {
     .nav-buttons > .passive:hover{
         color: #999;
     }
+    .nav-buttons > .active:hover{
+        color: #999;
+    }
     .nav-buttons:hover:before{
         /*width: 100%;*/
     }
     .nav-buttons-more > .passive:hover{
+        color: #999;
+    }
+    .nav-buttons-more > .active:hover{
         color: #999;
     }
     .nav-buttons-more:hover:before{
@@ -507,20 +513,27 @@ p {
     border-radius: 12px;
     }
 }
-@media only screen and (min-width: 485px) {
+/*possible duplicate*/
+/*@media only screen and (min-width: 485px) {
     .nav-buttons > .passive:hover{
         color: #999;
     }
+    .nav-buttons > .active:hover{
+        color: #999;
+    }
     .nav-buttons:hover:before{
-        /*width: 100%;*/
+        width: 100%;
     }
     .nav-buttons-more > .passive:hover{
         color: #999;
     }
-    .nav-buttons-more:hover:before{
-        /*width: 72%;*/
+    .nav-buttons-more > .active:hover{
+        color: #999;
     }
-}
+    .nav-buttons-more:hover:before{
+        width: 72%;
+    }
+}*/
 .wrapper-dropdown-2, .wrapper-dropdown-3, .wrapper-dropdown-1, .wrapper-dropdown-4, .wrapper-dropdown-5, .wrapper-dropdown-6 {
     position: relative;
     outline: none;
