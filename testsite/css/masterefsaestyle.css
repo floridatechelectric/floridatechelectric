@@ -862,7 +862,10 @@ a.button {
 <!--****************************************************************************************************-->
 */
 /*Body*/
-.body-header-holder {
+.ftfe-body-header {
+    background: url(../images/FTFE-header-horizontal.png) no-repeat 0px 0px;
+    background-size: contain;
+    position: relative;
     width:80%;
     left:0;
     right:0;
@@ -870,13 +873,6 @@ a.button {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-}
-.ftfe-body-header {
-    background: url(../images/FTFE-header-horizontal.png) no-repeat 0px 0px;
-    background-size: contain;
-    position: relative;
-    height: 100%;
-    width: 100%;
 }
 
 
