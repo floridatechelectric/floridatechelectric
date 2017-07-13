@@ -338,18 +338,22 @@ p {
 @media only screen and (min-width: 485px) {
     .nav-buttons > .passive:hover{
         color: #999;
+        top: 11px;
     }
     .nav-buttons > .active:hover{
         color: #999;
+        top: 11px;
     }
     .nav-buttons:hover:before{
         /*width: 100%;*/
     }
     .nav-buttons-more > .passive:hover{
         color: #999;
+        top: 11px;
     }
     .nav-buttons-more > .active:hover{
         color: #999;
+        top: 11px;
     }
     .nav-buttons-more:hover:before{
         /*width: 72%;*/
