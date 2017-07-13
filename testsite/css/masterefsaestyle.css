@@ -58,8 +58,9 @@ body {
     margin-bottom: 15px;
     width: 170px; 
 }
-.logoholder:hover {
+.spin-logo:hover {
     transform: rotateY(360deg);
+    /*transition:.5s all;*/
 }
 .wrap-content {
     width: 87%;
@@ -200,28 +201,28 @@ a.button {
 {
     .efsae-header-image {
         background: url(../images/header-background.jpg) no-repeat 0px -280px;
-            background-size: cover;
+        background-size: cover;
     }
 }
 @media screen and (max-width: 1500px)
 {
     .efsae-header-image {
         background: url(../images/header-background.jpg) no-repeat 0px -255px;
-            background-size: cover;
+        background-size: cover;
     }
 }
 @media screen and (max-width: 1400px)
 {
     .efsae-header-image {
         background: url(../images/header-background.jpg) no-repeat 0px -230px;
-            background-size: cover;
+        background-size: cover;
     }
 }
 @media screen and (max-width: 1100px)
 {
     .efsae-header-image {
         background: url(../images/header-background.jpg) no-repeat 0px -150px;
-            background-size: cover;
+        background-size: cover;
     }
 }
 @media screen and (max-width: 860px)
