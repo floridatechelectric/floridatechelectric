@@ -18,6 +18,7 @@ body {
     font-family:'Open Sans', sans-serif;
     margin: 0;
     overflow:hidden;
+    height: 800px;
 }
 /*
 <!--****************************************************************************************************-->
@@ -939,12 +940,12 @@ a.button {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     }
 }
 .body-header-accent{
     opacity: 1;
-    width: 50%;
+    width: 75%;
     position: relative;
     left: 0;
     right:0;
