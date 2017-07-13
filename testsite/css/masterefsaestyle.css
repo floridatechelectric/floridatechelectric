@@ -337,13 +337,13 @@ p {
 }
 @media only screen and (min-width: 485px) {
     .nav-buttons > .passive:hover{
-        color: rgb(23, 23, 23);
+        color: #999;
     }
     .nav-buttons:hover:before{
         /*width: 100%;*/
     }
     .nav-buttons-more > .passive:hover{
-        color: rgb(23, 23, 23);
+        color: #999;
     }
     .nav-buttons-more:hover:before{
         /*width: 72%;*/
@@ -509,13 +509,13 @@ p {
 }
 @media only screen and (min-width: 485px) {
     .nav-buttons > .passive:hover{
-        color: rgb(23, 23, 23);
+        color: #999;
     }
     .nav-buttons:hover:before{
         /*width: 100%;*/
     }
     .nav-buttons-more > .passive:hover{
-        color: rgb(23, 23, 23);
+        color: #999;
     }
     .nav-buttons-more:hover:before{
         /*width: 72%;*/
