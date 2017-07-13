@@ -54,10 +54,9 @@ body {
     left: 0; 
     margin-right: auto; 
     margin-left: auto; 
-    margin-top: 25px;
-    margin-bottom: -15px;
-    width: 100px; 
-    height: 60px;  
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 170px; 
 }
 .wrap-content {
     width: 87%;
