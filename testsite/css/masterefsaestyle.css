@@ -58,7 +58,12 @@ body {
     margin-bottom: 15px;
     width: 170px; 
 }
-.spin-logo:hover {
+.rev-logo {
+    background: url(../images/rev-logo-white.png) no-repeat 0px 0px;
+    width:100%;
+    height:100%;
+}
+.rev-logo:hover {
     transform: rotateY(360deg);
     /*transition:.5s all;*/
 }
