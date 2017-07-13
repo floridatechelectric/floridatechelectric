@@ -84,7 +84,7 @@ body {
     border-radius: 16px;
 }
 .social-icon i.icon:hover {
-    background: #4fc74f url(../images/img-sprite.png) no-repeat 0px 0px;
+    background: rgb(163, 35, 0) url(../images/img-sprite.png) no-repeat 0px 0px;
     transform: rotateY(360deg);
 }
 .social-icon i.icon {
@@ -94,21 +94,21 @@ body {
     background-position: -32px 0px;
 }
 .social-icon i.icon1:hover {
-    background: #a32300 url(../images/img-sprite.png) no-repeat -32px 0px;
+    background: rgb(163, 35, 0) url(../images/img-sprite.png) no-repeat -32px 0px;
     transform: rotateY(360deg);
 }
 .social-icon i.icon2 {
     background-position: -64px 0px;
 }
 .social-icon i.icon2:hover {
-    background: #4fc74f url(../images/img-sprite.png) no-repeat -64px 0px;
+    background: rgb(163, 35, 0) url(../images/img-sprite.png) no-repeat -64px 0px;
     transform: rotateY(360deg);
 }
 .social-icon i.icon3 {
     background-position: -96px 0px;
 }
 .social-icon i.icon3:hover {
-    background: #4fc74f url(../images/img-sprite.png) no-repeat -96px 0px;
+    background: rgb(163, 35, 0) url(../images/img-sprite.png) no-repeat -96px 0px;
     transform: rotateY(360deg);
 }
 .profile-menu {
@@ -146,7 +146,7 @@ a.button {
     left: 0px;
     top: 56px;
     height: 10px;
-    background-color: #4fc74f;
+    background-color: rgb(163, 35, 0);
 }
 .efsae-header-background {
     opacity: 1;
@@ -316,20 +316,20 @@ p {
     margin-bottom:3px;
 }
 .nav-buttons-more > .active {
-    color: #4fc74f;
+    color: rgb(163, 35, 0);
 }
 .nav-buttons-more > .passive {
     color:#666; 
 }
 @media only screen and (min-width: 485px) {
     .nav-buttons > .passive:hover{
-        color: #4fc74f;
+        color: rgb(163, 35, 0);
     }
     .nav-buttons:hover:before{
         width: 100%;
     }
     .nav-buttons-more > .passive:hover{
-        color: #4fc74f;
+        color: rgb(163, 35, 0);
     }
     .nav-buttons-more:hover:before{
         width: 72%;
