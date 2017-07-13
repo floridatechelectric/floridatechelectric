@@ -19,6 +19,12 @@ body {
     margin: 0;
     overflow:hidden;
 }
+/*
+<!--****************************************************************************************************-->
+<!--****************************************************************************************************-->
+<!--****************************************************************************************************-->
+*/
+/*Header*/
 .panel {
     margin-bottom: 0px;
     background: #313335!important;
@@ -501,16 +507,6 @@ p {
         width: 72%;
     }
 }
-
-
-
-
-
-
-
-
-
-
 .wrapper-dropdown-2, .wrapper-dropdown-3, .wrapper-dropdown-1, .wrapper-dropdown-4, .wrapper-dropdown-5, .wrapper-dropdown-6 {
     position: relative;
     outline: none;
@@ -860,8 +856,22 @@ a.button {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
-
-
+/*
+<!--****************************************************************************************************-->
+<!--****************************************************************************************************-->
+<!--****************************************************************************************************-->
+*/
+/*Body*/
+.ftfe-body-header {
+    background: url(../images/FTFE-header-horizontal.png) no-repeat 0px 0px;
+    position: absolute;
+    width: 80%;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
 
 
 
