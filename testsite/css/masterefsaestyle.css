@@ -876,7 +876,22 @@ a.button {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
+@media (max-width: 600px) {
+.ftfe-body-header {
+    background: url(../images/FTFE-header-vertical.png) no-repeat 0px 0px;
+    background-size: contain;
+    position: relative;
+    width:60%;
+    height:5vw;
+    left:0;
+    right:0;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+}
 
 
 
