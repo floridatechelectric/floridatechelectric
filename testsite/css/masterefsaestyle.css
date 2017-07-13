@@ -867,6 +867,7 @@ a.button {
     background-size: contain;
     position: relative;
     width:80%;
+    height:50vw;
     left:0;
     right:0;
     overflow: auto;
