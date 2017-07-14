@@ -1025,6 +1025,20 @@ a.button {
 .freebirdFormviewerViewCenteredContent {
     width: 100%!important;
 }
+.freebirdFormviewerViewFooterDisclaimer {
+    font: 400 12px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    margin: 0 0!important;
+    padding: 0 0!important;
+    text-align: center;
+    visibility: hidden!important;
+    height: 0!important;
+}
+.freebirdFormviewerViewFooterPageBreak {
+    page-break-after: always;
+    margin-top: -75px!important;
+    margin-bottom: 0!important;
+    height: 0!important;
+}
 
 
 
