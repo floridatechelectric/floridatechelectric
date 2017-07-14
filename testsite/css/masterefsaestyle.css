@@ -551,10 +551,12 @@ p {
     cursor: pointer;
 }
 .wrapper-dropdown-1 .dropdown, .wrapper-dropdown-3 .dropdown, .wrapper-dropdown-4 .dropdown, .wrapper-dropdown-2 .dropdown, .wrapper-dropdown-5 .dropdown {
-    width:171px;
+    width:100%;
     top:27px;
     position: absolute;
     right: 17%;
+    padding-left: 10%;
+    padding-right: 10%;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     -ms-transition: all 0.5s ease-out;
@@ -562,7 +564,7 @@ p {
     transition: all 0.5s ease-out;
     list-style: none;
     z-index:999;
-    background-color: #FFF;
+    background-color: #000;
     -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.47);
     -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.47);
     -o-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.47);
@@ -582,6 +584,7 @@ p {
 }
 .wrapper-dropdown-1 .dropdown li, .wrapper-dropdown-3 .dropdown li, .wrapper-dropdown-4 .dropdown li, .wrapper-dropdown-2 .dropdown li, .wrapper-dropdown-5 .dropdown li, .wrapper-dropdown-6 .dropdown li {
     padding:8px;
+    font-size: 22px;
 }
 .wrapper-dropdown-1 .dropdown li:hover, .wrapper-dropdown-2 .dropdown li:hover, .wrapper-dropdown-3 .dropdown li:hover, .wrapper-dropdown-4 .dropdown li:hover, .wrapper-dropdown-5 .dropdown li:hover, .wrapper-dropdown-6 .dropdown li:hover {
     background:#FDFDFD;
@@ -592,7 +595,7 @@ p {
 .wrapper-dropdown-1 .dropdown li a, .wrapper-dropdown-2 .dropdown li a, .wrapper-dropdown-3 .dropdown li a, .wrapper-dropdown-4 .dropdown li a, .wrapper-dropdown-5 .dropdown li a, .wrapper-dropdown-6 .dropdown li a {
     display: block;
     text-decoration: none;
-    color:#232323;
+    color:#666;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
