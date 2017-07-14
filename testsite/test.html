@@ -267,19 +267,22 @@
 
           <div class="overlay" id="checkin">
             <div class="popup">
-            <!--<h2>Attendance</h2>-->
+            <h2>Sign in form</h2>
             <a class="close" href="#">&times;</a>
             <div class="content">
               <script>
                 function postToGoogle() {
                 var field1 = $("input[type='radio'][name='qs1']:checked").val();
                 var field2 = $('#feed').val();
+                var field3 = $('#feed2').val();
 
                 $.ajax({
-                  url: "https://docs.google.com/forms/d/e/1FAIpQLSdjOTKRb7YiWi8OGPq6M6CRL0TpuAsUKacKp2XgruMbIp4wzg/formResponse",
+                  /*url: "https://docs.google.com/forms/d/e/1FAIpQLSdjOTKRb7YiWi8OGPq6M6CRL0TpuAsUKacKp2XgruMbIp4wzg/formResponse",*/
+                  url: "https://docs.google.com/forms/d/e/1FAIpQLSdmKRNAPPTkAcy4iYHaEeG1T5J5vKU9eCHZimn9sEUY8RxeEQ/viewform?usp=pp_url",
                     data: {
-                      "entry.924752166": field1,
-                      "entry.997497831": field2
+                      "entry.1923829317": field1,
+                      "entry.766132253": field2,
+                      "entry.1060894567":field3
                     },
                     type: "POST",
                     dataType: "xml",
@@ -294,19 +297,20 @@
                   });
                 }
               </script>
-              <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
 
-              <strong>Test Google Form</strong>
               <form id="form" target="_self" onsubmit="" action="javascript: postToGoogle()">
                 <fieldset>
-                  <label>Question 1</label>
+                  <label>Is this your first EFSAE Meeting?</label>
                   <input id="qs1_op_1" type="radio" value="Yes" name="qs1" />
                   <input id="qs1_op_2" type="radio" value="No" name="qs1" />
                 </fieldset>
-
                 <fieldset>
-                  <label>Text</label>
+                  <label>Please enter your name:</label>
                     <textarea id="feed" name="feed"></textarea>
+                </fieldset>
+                <fieldset>
+                  <label>Please enter your FIT email:</label>
+                    <textarea id="feed2" name="feed2"></textarea>
                 </fieldset>
                 <div style="width: 100%; display: block; float: right;">
                   <button id="send" type="submit">Send</button>
@@ -320,6 +324,11 @@
           </div><!--end of overlay-->
 
 
+
+
+
+
+          
 
       		</div><!--end of phone-box wrap push-->
 		</div><!-- end of masthead pdng-stn1-->
