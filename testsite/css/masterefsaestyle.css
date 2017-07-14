@@ -982,7 +982,7 @@ a.button {
   visibility: visible;
   opacity: 1;
 }
-.popup {
+/*.popup {
   margin: 70px auto;
   padding: 20px;
   background: #fff;
@@ -995,7 +995,7 @@ a.button {
   margin-top: 0;
   color: #333;
   font-family: Tahoma, Arial, sans-serif;
-}
+}*/
 .popup .close {
   position: absolute;
   top: 20px;
@@ -1027,7 +1027,7 @@ h4{
    margin: 0 0 20px 0;
 }
 #contact-form {
-   background-color:rgba(72,72,72,0.7);
+   background-color:rgba(50,50,50,1);
    padding: 10px 20px 30px 20px;
    max-width:100%;
    float: left;
