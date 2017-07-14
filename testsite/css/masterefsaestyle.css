@@ -6,11 +6,10 @@ body {
     padding: 0;
     left: 0px;
     right: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1600px;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    max-width: 1600px!important;
     min-width: 345px;
-    margin-bottom: -20px;
     overflow: hidden;
 }
 .body-back {
@@ -19,6 +18,7 @@ body {
     margin: 0;
     overflow:hidden;
     height: 800px;
+    max-width:1600px;
 }
 /*
 <!--****************************************************************************************************-->
@@ -193,6 +193,7 @@ a.button {
     z-index: 80;
     width: 100vw;
     max-height: 750px;
+    max-width: 1600px;
     min-width: 345px;
 }
 .efsae-header-image {
@@ -205,11 +206,12 @@ a.button {
     -o-background-size: cover;
     height: 36vw;
     width: 100vw;
+    max-width: 1600px;
     max-height: 520px;
     min-width: 400px;
     text-align: center;
 }
-@media screen and (max-width: 1600px)
+@media screen and (max-width: 1601px)
 {
     .efsae-header-image {
         background: url(../images/header-background.jpg) no-repeat 0px -280px;
