@@ -332,6 +332,32 @@
 <div class="overlay" id="checkin">
 <div class="popup">
 <div id="contact-form">
+              <script>
+                function postToGoogle() {
+                var field1 = $("input[type='radio'][name='qs1']:checked").val();
+                var field2 = $('#feed').val();
+                var field3 = $('#feed2').val();
+
+                $.ajax({
+                  url: "https://docs.google.com/forms/d/e/1FAIpQLSdmKRNAPPTkAcy4iYHaEeG1T5J5vKU9eCHZimn9sEUY8RxeEQ/formResponse",
+                    data: {
+                      "entry.1923829317": field1,
+                      "entry.766132253": field2,
+                      "entry.1060894567":field3
+                    },
+                    type: "POST",
+                    dataType: "xml",
+                    statusCode: {
+                      0: function() {
+                        //Success message
+                      },
+                      200: function() {
+                        //Success Message
+                      }
+                    }
+                  });
+                }
+              </script>
   <div>
     <h1 style="color: #FFF; text-align: center;">Sign in Form</h1> 
   </div>
@@ -353,7 +379,7 @@
       </div>
       <div>             
           <label for="subject">
-          <span>Subject: </span>
+          <span class="required">First time attending EFSAE?</span>
             <select id="subject" name="subject" tabindex="4" required>   
                <option id="qs1_op_1" name="qs1" value="Yes"</option>
                <option id="qs1_op_2" name="qs1" value="No"</option>  

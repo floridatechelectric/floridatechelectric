@@ -1045,6 +1045,7 @@ h4{
 #contact-form label { 
    font-size: 15px;  
    margin-bottom: 2px;
+   width:100%;
    font-family: Arial, san-serif;
 } 
 #contact-form input,   
