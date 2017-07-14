@@ -984,7 +984,7 @@ a.button {
 }
 .popup {
   margin: 70px auto;
-  padding: 20px;
+  padding: 0;
   background: #fff;
   border-radius: 5px;
   width: 30%;
@@ -1011,7 +1011,7 @@ a.button {
 }
 .popup .content {
   max-height: 30%;
-  overflow: auto;
+  overflow: visible;
 }
 
 
