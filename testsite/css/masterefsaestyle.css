@@ -1004,7 +1004,8 @@ a.button {
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: #FFF;
+  opacity:1;
 }
 .popup .close:hover {
   color: rgb(163,35,0);
