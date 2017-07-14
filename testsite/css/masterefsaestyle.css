@@ -1084,9 +1084,9 @@ h4{
    border-radius:5px;
 }
 #contact-form button[type="submit"]:hover {
-   background-image:linear-gradient(bottom, #9C215A 0%, #A82767 52%);
-   background-image:-moz-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
-   background-image:-webkit-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+   background-image:linear-gradient(bottom, #CCC 0%, rgb(163,35,0) 52%);
+   background-image:-moz-linear-gradient(bottom, #CCC 0%, rgb(163,35,0) 52%);
+   background-image:-webkit-linear-gradient(bottom, #CCC 0%, rgb(163,35,0) 52%);
    -webkit-transition:background 0.3s ease-in-out;
    -moz-transition:background 0.3s ease-in-out;
    transition:background-color 0.3s ease-in-out;
