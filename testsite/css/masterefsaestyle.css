@@ -549,12 +549,11 @@ p {
     position: relative;
     outline: none;
     cursor: pointer;
+    width:100%;
 }
 .wrapper-dropdown-1 .dropdown, .wrapper-dropdown-3 .dropdown, .wrapper-dropdown-4 .dropdown, .wrapper-dropdown-2 .dropdown, .wrapper-dropdown-5 .dropdown {
     width:100%;
-    top:27px;
     position: absolute;
-    right: 17%;
     padding-left: 10%;
     padding-right: 10%;
     -webkit-transition: all 0.5s ease-out;
