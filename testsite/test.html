@@ -300,17 +300,20 @@
 
               <form id="form" target="_self" onsubmit="" action="javascript: postToGoogle()">
                 <fieldset>
-                  <label>Is this your first EFSAE Meeting?</label>
-                  <input id="qs1_op_1" type="radio" value="Yes" name="qs1" />
-                  <input id="qs1_op_2" type="radio" value="No" name="qs1" />
-                </fieldset>
-                <fieldset>
                   <label>Please enter your name:</label>
-                    <textarea id="feed" name="feed"></textarea>
+                    <input type="text" required id="feed" name="feed"></input>
                 </fieldset>
                 <fieldset>
                   <label>Please enter your FIT email:</label>
-                    <input type="text" required id="feed2" name="feed2"></textarea>
+                    <input type="text" required id="feed2" name="feed2"></input>
+                </fieldset>
+                <fieldset>
+                  <label>Is this your first EFSAE Meeting?</label>
+                  <strong>Yes</strong>
+                  <input id="qs1_op_1" type="radio" value="Yes" name="qs1" required />
+                  <br>
+                  <strong>No</strong>
+                  <input id="qs1_op_2" type="radio" value="No" name="qs1" required />
                 </fieldset>
                 <div style="width: 100%; display: block; float: right;">
                   <button id="send" type="submit">Send</button>

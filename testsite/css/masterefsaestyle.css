@@ -984,7 +984,7 @@ a.button {
 }
 .popup {
   margin: 70px auto;
-  padding: 0;
+  padding: 20px;
   background: #fff;
   border-radius: 5px;
   width: 30%;
@@ -1013,34 +1013,6 @@ a.button {
   max-height: 30%;
   overflow: visible;
 }
-
-
-
-
-
-
-.freebirdFormviewerViewFormBanner {
-    height: 0!important;
-}
-.freebirdFormviewerViewCenteredContent {
-    width: 100%!important;
-}
-.freebirdFormviewerViewFooterDisclaimer {
-    font: 400 12px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
-    margin: 0 0!important;
-    padding: 0 0!important;
-    text-align: center;
-    visibility: hidden!important;
-    height: 0!important;
-}
-.freebirdFormviewerViewFooterPageBreak {
-    page-break-after: always;
-    margin-top: -75px!important;
-    margin-bottom: 0!important;
-    height: 0!important;
-}
-
-
 
 
 
