@@ -271,11 +271,57 @@
             <a class="close" href="#">&times;</a>
             <div class="content">
               <script type="text/javascript">
-                $('iframe').load( function() {
-                  $('iframe').contents().find("head")
-                  .append($("<style type='text/css'>  .freebirdFormviewerViewFooterPageBreak{display:none;}  </style>"));
-                });
+                function postToGoogle() {
+    var field1 = $("input[type='radio'][name='qs1']:checked").val();
+   var field2 = $('#feed').val();
+
+   $.ajax({
+     url: "https://docs.google.com/forms/d/e/1FAIpQLSdjOTKRb7YiWi8OGPq6M6CRL0TpuAsUKacKp2XgruMbIp4wzg/formResponse",
+     data: {
+       "entry.924752166": field1,
+       "entry.997497831": field2
+     },
+     type: "POST",
+     dataType: "xml",
+     statusCode: {
+       0: function() {
+         //Success message
+       },
+       200: function() {
+         //Success Message
+       }
+     }
+   });
+ }
               </script>
+             
+
+             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<strong>Test Google Form</strong>
+<form id="form" target="_self" onsubmit="" action="javascript: postToGoogle()">
+  <fieldset>
+    <label>Question 1</label>
+    <input id="qs1_op_1" type="radio" value="Yes" name="qs1" />
+    <input id="qs1_op_2" type="radio" value="No" name="qs1" />
+  </fieldset>
+
+  <fieldset>
+    <label>Text</label>
+    <textarea id="feed" name="feed"></textarea>
+  </fieldset>
+  <div style="width: 100%; display: block; float: right;">
+    <button id="send" type="submit">
+      Send
+    </button>
+  </div>
+</form>
+<br /><br />
+The <a href="https://docs.google.com/spreadsheets/d/1bVeLfK2gm6emaGRKHnMllpeb_P4HwwZoIfZB5MCcyZg/pubhtml">Result</a> takes few minutes to be shown, but it is sent to the google sheet instantaneously. 
+<br /><br />
+
+
+
               <iframe src="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdmKRNAPPTkAcy4iYHaEeG1T5J5vKU9eCHZimn9sEUY8RxeEQ/viewform?embedded=true" width="400" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
             </div>
