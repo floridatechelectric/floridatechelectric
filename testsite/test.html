@@ -340,14 +340,44 @@
       </div>
       <center><a href="https://docs.google.com/spreadsheets/d/1Il0r26W9cZ3CWwNO4Xr2LThQq93DwMs3f1FRPtlR2rE/edit?usp=sharing" style="text-decoration: none!important; margin-top: 8px;" target="_blank">View the List</a></center>
        </form>
+       <script>
+        jQuery(function($) {
+            $("#form").validate({
+                debug: false,
+                focusInvalid: false,
+                onfocusout: false,
+                onkeyup: false,
+                onclick: false,
+                rules: {
+                    instrument: {
+                        required: true,
+                        maxlength: 10
+                    },
+                },
+                messages: {
+                    maxlength: "Must no longer than 10 characters",
+                    required: "Must not be empty"
+                },
+                success: function(label) {
+                    alert('succes:' + label);
+                },
+                submitHandler: function(form) {
+                    alert('start submitHandler');
+                    postContent('test');
+                    alert('end submitHandler');
+                },
+                invalidHandler: function(form, validator) {
+                    alert('invalidHandler');
+                },
+            });
+        });
 
-  </div>
-  <div id="formsuccess" name="formsuccess" class="formsuccess">
-    <div>
-      <a class="close" href="#">&times;</a>
-      <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">Success!</h1> 
-    </div>
-    <button name="close" type="close" id="close" onclick="location.href='#'">SEND</button> 
+
+        function postContent(postData) {
+            alert('postcontent: ' + postData);
+
+        }
+       </script>
   </div>
 </div>
 </div>
