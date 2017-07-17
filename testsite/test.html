@@ -297,23 +297,32 @@
           dataType: "xml",
           statusCode: {
             0: function() {
-              document.getElementById(success).style.visibility="visible";
+              
             },
             200: function() {
-              document.getElementById(success).style.visibility="visible";
+              
             }
           }
         });
+      }
+    </script>
+    <script>
+      function validateForm() {
+        var x = document.forms["form"]["feed"].value;
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+          }
       }
     </script>
   <div>
   <a class="close" href="#">&times;</a>
     <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">Sign in</h1> 
   </div>
-    <p id="failure">Message not sent.</p>  
-    <p id="success">Your message was sent successfully.</p>
+    <!--<p id="failure">Message not sent.</p>  
+    <p id="success">Your message was sent successfully.</p>-->
 
-       <form id="form" target="_self" onsubmit="" action="javascript: postToGoogle()">
+       <form id="form" name="form" target="_self" onsubmit="return validateForm()" action="javascript: postToGoogle()">
       <div>
           <label for="name">
             <span class="required">Name: *</span> 
