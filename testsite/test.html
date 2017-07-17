@@ -11,12 +11,20 @@
 	<script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="js/bigSlide.js"></script>
-	<script>
+	<!--<script>
             $(document).ready(function() 
             {
                 $('.menu-link').bigSlide();
             });
-	</script>         
+	</script>-->
+  <script>
+    $(document).ready(function () {
+        var bigSlideAPI = ($('.menu-link').bigSlide()).bigSlideAPI;
+        $('.menu-close').click(function() {
+          bigSlideAPI.view.toggleClose();
+        });
+   });
+  </script>         
 </head>
 
 <body>
@@ -59,7 +67,7 @@
             			<a class="button hvr-shutter-out-horizontal" href="#">Reference Materials</a>
             			<a class="button hvr-shutter-out-horizontal" href="#">Software</a>
                   
-                  <a class="menu-link button hvr-shutter-out-horizontal" href="#checkin">Check In</a>
+                  <a class="menu-close button hvr-shutter-out-horizontal" href="#checkin">Check In</a>
                   <a class="button hvr-shutter-out-horizontal" href="#checkin">Check In</a>
                   
           			</div>
