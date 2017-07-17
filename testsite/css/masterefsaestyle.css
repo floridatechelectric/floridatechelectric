@@ -994,10 +994,12 @@ a.button {
 .about-half {
     float: left;
     width: 40%;
-    margin: 40px 5% 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 50px;
     min-width: 320px;
+    margin-top: 40px;
     text-align: justify;
-    min-height: 220px;
 }
 .equalholder { 
     float:left; 
