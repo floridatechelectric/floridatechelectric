@@ -1180,11 +1180,13 @@ input:required, textarea:required {
    background-color:rgba(50,50,50,1);
    padding: 10px 20px 15px 20px;
    max-width:100%;
-   float: left;
-   left: 50%;
+   width:80%;
+   left: 0;
+   right: 0;
    position: absolute;
    margin-top:30px;
-   margin-left: -150.5px;
+   margin-left: auto;
+   margin-right:auto;
    border-radius:7px;
    -webkit-border-radius:7px;
    -moz-border-radius:7px;
