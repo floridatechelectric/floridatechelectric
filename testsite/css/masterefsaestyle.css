@@ -970,8 +970,8 @@ a.button {
     margin-left: auto;
     margin-right: auto;
     transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
+    visibility: visible;
+    opacity: 1;
 }
 .home:target {
     visibility: visible;
@@ -984,8 +984,8 @@ a.button {
     margin-left: auto;
     margin-right: auto;
     transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
+    visibility: visible;
+    opacity: 1;
 }
 .about:target {
     visibility: visible;
