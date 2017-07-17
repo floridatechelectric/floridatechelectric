@@ -15,8 +15,7 @@ body {
     background: #434343;
     font-family:'Open Sans', sans-serif;
     margin: 0;
-    overflow:hidden;
-    height: 800px;
+    /*overflow:hidden;*/
     max-width:1600px;
 }
 /*
