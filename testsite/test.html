@@ -310,6 +310,7 @@
       function validateForm() {
         var x = document.forms["form"]["feed"].value;
           if (x == "") {
+            document.getElementById('send').className += 'formfail'
             alert("Form not completed, please try again");
             return false;
           }

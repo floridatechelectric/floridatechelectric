@@ -1088,7 +1088,11 @@ h4{
     background-image:linear-gradient(bottom, rgb(0,255,0) 0%, rgb(0,255,0) 52%)!important;
     background-image:-moz-linear-gradient(bottom, rgb(0,255,0) 0%, rgb(0,255,0) 52%)!important;
     background-image:-webkit-linear-gradient(bottom, rgb(0,255,0) 0%, rgb(0,255,0) 52%)!important;
-
+}
+#contact-form .submitbutton .formfail{
+    background-image:linear-gradient(bottom, rgb(255,0,0) 0%, rgb(255,0,0) 52%)!important;
+    background-image:-moz-linear-gradient(bottom, rgb(255,0,0) 0%, rgb(255,0,0) 52%)!important;
+    background-image:-webkit-linear-gradient(bottom, rgb(255,0,0) 0%, rgb(255,0,0) 52%)!important;
 }
 #contact-form button[type="submit"]:hover {
    background-image:linear-gradient(bottom, rgb(170,35,0) 0%, rgb(170,35,0) 52%);
