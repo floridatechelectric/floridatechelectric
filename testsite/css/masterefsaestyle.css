@@ -975,6 +975,10 @@ a.button {
     visibility: hidden;
     opacity: 0;
 }
+.home-body:target {
+    visibility: visible;
+    opacity: 1;
+}
 
 
 
