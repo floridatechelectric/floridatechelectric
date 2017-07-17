@@ -1110,7 +1110,7 @@ input:required, textarea:required {
    (especially since the php is missing) */
 #failure, #success {
    color: #6EA070; 
-   display:none;  
+   visibility: hidden;  
 }
 
 /* Make form look nice on smaller screens */

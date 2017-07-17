@@ -297,10 +297,10 @@
           dataType: "xml",
           statusCode: {
             0: function() {
-              //Success message
+              document.getElementById(success).style.visibility="visible";
             },
             200: function() {
-              //Success Message
+              document.getElementById(success).style.visibility="visible";
             }
           }
         });
@@ -310,8 +310,8 @@
   <a class="close" href="#">&times;</a>
     <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">Sign in</h1> 
   </div>
-    <!--<p id="failure">Message not sent.</p>  
-    <p id="success">Your message was sent successfully.</p>-->
+    <p id="failure">Message not sent.</p>  
+    <p id="success">Your message was sent successfully.</p>
 
        <form id="form" target="_self" onsubmit="" action="javascript: postToGoogle()">
       <div>
@@ -341,44 +341,7 @@
       </div>
       <center><a href="https://docs.google.com/spreadsheets/d/1Il0r26W9cZ3CWwNO4Xr2LThQq93DwMs3f1FRPtlR2rE/edit?usp=sharing" style="text-decoration: none!important; margin-top: 8px;" target="_blank">View the List</a></center>
        </form>
-       <script>
-        jQuery(function($) {
-            $("#form").validate({
-                debug: false,
-                focusInvalid: false,
-                onfocusout: false,
-                onkeyup: false,
-                onclick: false,
-                rules: {
-                    instrument: {
-                        required: true,
-                        maxlength: 10
-                    },
-                },
-                messages: {
-                    maxlength: "Must no longer than 10 characters",
-                    required: "Must not be empty"
-                },
-                success: function(label) {
-                    alert('succes:' + label);
-                },
-                submitHandler: function(form) {
-                    alert('start submitHandler');
-                    postContent('test');
-                    alert('end submitHandler');
-                },
-                invalidHandler: function(form, validator) {
-                    alert('invalidHandler');
-                },
-            });
-        });
-
-
-        function postContent(postData) {
-            alert('postcontent: ' + postData);
-
-        }
-       </script>
+       
   </div>
 </div>
 </div>
