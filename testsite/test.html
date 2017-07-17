@@ -309,8 +309,21 @@
     <script>
       function validateForm() {
         var x = document.forms["form"]["feed"].value;
+        var y = document.forms["form"]["feed2"].value;
+        var z = document.forms["form"]["subject"].value;
+        var success = true;
           if (x == "") {
-            alert("Name must be filled out");
+            success = false;
+          }
+          if (y == "") {
+            success = false;
+          }
+          if (z == "") {
+            success = false;
+          }
+
+          if (success == false){
+            alert("Form not completed, please try again");
             return false;
           }
           else {
