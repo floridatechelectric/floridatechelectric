@@ -1015,7 +1015,15 @@ a.button {
   max-height: 30%;
   overflow: visible;
 }
-
+.formsuccess{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 500ms;
+}
+.formsuccess:target {
+  visibility: visible;
+  opacity: 1;
+}
 
 
 
