@@ -464,7 +464,8 @@ p {
     top: 48px;
     height: 3px;
     background-color: rgb(163, 35, 0);
-    z-index: 94;
+    /*z-index: 94;*/
+    /*shows above sign in form*/
 }
 .button-more {
     visibility: hidden;
