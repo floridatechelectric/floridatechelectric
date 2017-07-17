@@ -10,7 +10,6 @@ body {
     margin-right: auto!important;
     max-width: 1600px!important;
     min-width: 345px;
-    overflow: hidden;
 }
 .body-back {
     background: #434343;
