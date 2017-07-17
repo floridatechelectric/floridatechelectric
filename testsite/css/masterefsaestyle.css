@@ -1115,10 +1115,11 @@ input:required, textarea:required {
 /* Make form look nice on smaller screens */
 @media only screen and (max-width: 580px) {
    #contact-form{
-      left: 3%;
-      margin-right: 3%;
+      left: 0;
+      right:0;
+      margin-right: auto;
       width: 88%;
-      margin-left: 0;
+      margin-left: auto;
       padding-left: 3%;
       padding-right: 3%;
    }
