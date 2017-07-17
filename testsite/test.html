@@ -286,10 +286,6 @@
       var field2 = $('#feed').val();
       var field3 = $('#feed2').val();
 
-      if (field2 == ""){
-        alert("Form not completed, please try again");
-      }
-      else {
       $.ajax({
         url: "https://docs.google.com/forms/d/e/1FAIpQLSdmKRNAPPTkAcy4iYHaEeG1T5J5vKU9eCHZimn9sEUY8RxeEQ/formResponse",
           data: {
@@ -309,7 +305,6 @@
           }
         });
       }
-    }
     </script>
     <script>
       function validateForm() {
@@ -331,7 +326,7 @@
     <!--<p id="failure">Message not sent.</p>  
     <p id="success">Your message was sent successfully.</p>-->
 
-       <form id="form" name="form" target="_self" onsubmit="" action="javascript: postToGoogle()">
+       <form id="form" name="form" target="_self" onsubmit="return validateForm()" action="javascript: postToGoogle()">
       <div>
           <label for="name">
             <span class="required">Name: *</span> 
