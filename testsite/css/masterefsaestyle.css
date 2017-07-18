@@ -1063,10 +1063,10 @@ a.button {
     color: #fff;
     text-decoration: none!important;
 }
-.header-link a {
+.header-link {
     text-decoration: none!important;
 }
-.header-link a:hover {
+.header-link:hover {
     text-decoration: none!important;
     color: rgb(163, 35, 0);
 }
