@@ -975,7 +975,7 @@ a.button {
     right:0;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 50px;
+    padding-left: 2%;
     padding-right: 2%;
     margin-bottom: 2%;
     transition: opacity 500ms;
@@ -1014,6 +1014,8 @@ a.button {
     right:0;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 1%;
+    padding-right: 1%;
     transition: opacity 500ms;
     visibility: visible;
     opacity: 1;
@@ -1055,11 +1057,11 @@ a.button {
 }
 .about-half {
     float: left;
-    width: 40%;
+    width: 46%;
     margin-left: 2%;
     margin-right: 2%;
-    margin-bottom: 50px;
-    min-width: 320px;
+    margin-bottom: 30px;
+    min-width: 300px;
     text-align: justify;
 }
 .equalholder { 
@@ -1078,10 +1080,17 @@ a.button {
 @media (max-width: 880px) {
     .about-half {
         width:100%;
+        margin-left:0;
+        margin-right:0;
     }
     .equalheight1 p {
         margin:0;
         padding:0;
+        max-width: 600px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 .body-header-2 {
