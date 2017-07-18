@@ -147,6 +147,10 @@ a.button {
     width: 80%;
     margin: 1em auto;
 }
+#sticky {
+    width: 100%;
+    max-width: 1680px;
+}
 .efsae-header{
     z-index: 90;
     visibility: hidden;
