@@ -1014,8 +1014,11 @@ a.button {
     margin:.5em;
     padding:0;
 }
-
-
+.body-header h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+}
 
 
 
