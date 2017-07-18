@@ -991,6 +991,7 @@ a.button {
 }
 .about {
     position: relative;
+    display: inline-block;
     left: 0;
     right:0;
     margin-left: auto;
@@ -1014,7 +1015,6 @@ a.button {
     margin-right: 5%;
     margin-bottom: 50px;
     min-width: 320px;
-    margin-top: 40px;
     text-align: justify;
 }
 .equalholder { 
