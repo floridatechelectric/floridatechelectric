@@ -1051,10 +1051,10 @@ a.button {
     color: #fff;
     text-decoration: none!important;
 }
-.body-header-3 a {
+.header-link a {
     text-decoration: none!important;
 }
-.body-header-3 a:hover {
+.header-link a:hover {
     text-decoration: none!important;
     color: rgb(163, 35, 0);
 }
