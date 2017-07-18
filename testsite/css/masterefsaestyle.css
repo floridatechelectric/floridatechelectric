@@ -998,6 +998,14 @@ a.button {
     -o-transform: scale(0.98);
     transform: scale(0.98);
 }
+.center-image {
+    width: 100%;
+    max-width: 600px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
 .about {
     position: relative;
     display: inline-block;
