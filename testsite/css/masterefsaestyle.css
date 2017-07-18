@@ -1031,6 +1031,10 @@ a.button {
     color: #999;
     max-width: 600px;
 }
+.about-text-2 {
+    text-align: justify;
+    color: #999;
+}
 .about-half {
     float: left;
     width: 40%;
