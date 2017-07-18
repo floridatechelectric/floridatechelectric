@@ -969,12 +969,15 @@ a.button {
 /*Body*/
 .home {
     position: relative;
+    width: 100%;
     display: inline-block;
     left: 0;
     right:0;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 2%;
+    margin-bottom: 2%;
     transition: opacity 500ms;
     visibility: visible;
     opacity: 1;
@@ -998,6 +1001,7 @@ a.button {
 .about {
     position: relative;
     display: inline-block;
+    width: 100%;
     left: 0;
     right:0;
     margin-left: auto;
@@ -1010,7 +1014,7 @@ a.button {
     visibility: visible;
     opacity: 1;
 }
-.about img{
+/*.about img{
     -webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
     -o-transition: all 300ms ease-in-out;
@@ -1021,16 +1025,17 @@ a.button {
     -ms-transform: scale(0.98);
     -o-transform: scale(0.98);
     transform: scale(0.98);
-}
+}*/
 .about-text {
     text-align: justify;
     color: #999;
+    max-width: 600px;
 }
 .about-half {
     float: left;
     width: 40%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-bottom: 50px;
     min-width: 320px;
     text-align: justify;
