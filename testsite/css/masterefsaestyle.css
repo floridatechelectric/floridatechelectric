@@ -1035,7 +1035,7 @@ a.button {
     margin-top: 30px;
     margin-bottom: 20px;
     color: #fff;
-    text-decoration: none;
+    text-decoration: none!important;
 }
 .body-header-3 {
     text-align: center;
@@ -1043,13 +1043,14 @@ a.button {
     margin-bottom: 10px;
     /*color: rgb(163, 35, 0);*/
     color: #fff;
-    text-decoration: none;
+    text-decoration: none!important;
 }
 .body-header-3 a {
-    text-decoration: none;
+    text-decoration: none!important;
 }
 .body-header-3 a:hover {
-    text-decoration: none;
+    text-decoration: none!important;
+    color: rgb(163, 35, 0);
 }
 
 
