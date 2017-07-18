@@ -977,6 +977,18 @@ a.button {
     visibility: visible;
     opacity: 1;
 }
+.home-grid img{
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.home-grid:hover img {
+    webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+}
 .about {
     position: relative;
     left: 0;
