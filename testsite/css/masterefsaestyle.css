@@ -1048,6 +1048,9 @@ a.button {
 .body-header-3 a {
     text-decoration: none;
 }
+.body-header-3 a:hover {
+    text-decoration: none;
+}
 
 
 
