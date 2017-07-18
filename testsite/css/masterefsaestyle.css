@@ -1045,7 +1045,9 @@ a.button {
     color: #fff;
     text-decoration: none;
 }
-
+.body-header-3 a {
+    text-decoration: none;
+}
 
 
 
