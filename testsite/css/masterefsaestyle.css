@@ -1035,12 +1035,14 @@ a.button {
     margin-top: 30px;
     margin-bottom: 20px;
     color: #fff;
+    text-decoration: none;
 }
 .body-header-3 {
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: rgb(163, 35, 0);
+    text-decoration: none;
 }
 
 
