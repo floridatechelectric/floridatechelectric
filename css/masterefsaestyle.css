@@ -1100,7 +1100,7 @@ a.button {
     }
 }
 @media (max-width: 450px) {
-    .about-half {
+    .equalheight1 p {
         padding-right: 15px;
         padding-left: 15px;
     }
