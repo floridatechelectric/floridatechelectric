@@ -1015,11 +1015,17 @@ a.button {
     padding:0;
 }
 .body-header h2{
+    text-align: center;
     margin-top: 30px;
     margin-bottom: 20px;
     color: #fff;
 }
-
+.body-header h3{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #fff;
+}
 
 
 
