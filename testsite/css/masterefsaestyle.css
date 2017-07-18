@@ -265,6 +265,12 @@ a.button {
 .sticky-anchor {
     height: 0px;
 }
+#sticky.stick {
+    margin-top: 0 !important;
+    position: fixed;
+    top: 0;
+    z-index: 90;
+}
 .navigation-menu-stuck {
     z-index: 90;
     padding: 0px 0;
