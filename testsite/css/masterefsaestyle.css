@@ -970,6 +970,7 @@ a.button {
     right:0;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
     transition: opacity 500ms;
     visibility: visible;
     opacity: 1;
