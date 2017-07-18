@@ -1003,7 +1003,7 @@ a.button {
     visibility: visible;
     opacity: 1;
 }
-.about-text p {
+.about-text {
     text-align: justify;
     color: #999;
 }
@@ -1030,13 +1030,13 @@ a.button {
     margin:.5em;
     padding:0;
 }
-.body-header h2 {
+.body-header-2 {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 20px;
     color: #fff;
 }
-.body-header h3 {
+.body-header-3 {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 5px;
