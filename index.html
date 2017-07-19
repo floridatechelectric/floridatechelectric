@@ -32,6 +32,14 @@
      s.parentNode.insertBefore(gcse, s);
    })();
 </script>
+<script>
+  $(function() {
+    $('.stopscroll').click(function() {
+        $(window).scroll(function() { return false; });
+        pageTracker._trackPageview('');            
+    });
+});
+</script>
 <gcse:searchresults-only>
 </gcse:searchresults-only>
 </head>
@@ -75,7 +83,7 @@
                   <a class="menu-close button hvr-shutter-out-horizontal" href="#">Competitions</a>
                   <a class="menu-close button hvr-shutter-out-horizontal" href="#">Reference Materials</a>
                   <a class="menu-close button hvr-shutter-out-horizontal" href="#newmember">New Member Survey</a>
-                  <a class="menu-close button hvr-shutter-out-horizontal" href="#checkin">Check In</a>
+                  <a class="menu-close button hvr-shutter-out-horizontal stopscroll" href="#checkin">Check In</a>
                 </div>
             </div>
           </div><!--end of panel-->
@@ -436,6 +444,7 @@
             {
               /*window.open('google.com','_blank');*/
               window.location.href = '#newmember';
+              /*$('body').css('overflow', 'hidden');*/
             }
             return true;
           }
