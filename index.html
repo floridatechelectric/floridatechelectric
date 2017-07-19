@@ -34,10 +34,7 @@
 </script>
 <script>
   $(function() {
-    $('.stopscroll').click(function() {
-        $(window).scroll(function() { return false; });
-        pageTracker._trackPageview('');            
-    });
+        document.body.style.overflow = "hidden";            
 });
 </script>
 <gcse:searchresults-only>
