@@ -1314,12 +1314,47 @@ input:required, textarea:required {
 
 
 
+/*
+<!--****************************************************************************************************-->
+<!--****************************************************************************************************-->
+<!--****************************************************************************************************-->
+*/
+/*New member survey popup*/
+#newmember-survey-holder {
+   background-color:rgba(50,50,50,1);
+   padding: 10px 20px 15px 20px;
+   max-width:100%;
+   width:80%;
+   left: 0;
+   right: 0;
+   position: absolute;
+   margin-top:30px;
+   margin-left: auto;
+   margin-right:auto;
+   border-radius:7px;
+   -webkit-border-radius:7px;
+   -moz-border-radius:7px;
+}
+@media only screen and (max-width: 580px) {
+   #newmember-survey-holder {
+      left: 0;
+      right:0;
+      margin-right: auto;
+      width: 88%;
+      margin-left: auto;
+      padding-left: 3%;
+      padding-right: 3%;
+   }
+}
 
 
 
-
-
-
+/*
+<!--****************************************************************************************************-->
+<!--****************************************************************************************************-->
+<!--****************************************************************************************************-->
+*/
+/*Search results popup*/
 .cse .gsc-control-cse, .gsc-control-cse {
     padding:0!important;
     border: none!important;
