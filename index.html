@@ -35,7 +35,14 @@
 <script>
   $(function() {
     $('.stopscroll').click(function() {
-        document.body.style.overflow = "hidden";            
+        document.body.style.overflow = "hidden"; 
+    });
+});
+</script>
+<script>
+  $(function() {
+    $('.resumescroll').click(function() {
+        document.body.style.overflow = "visible";
     });
 });
 </script>
@@ -78,10 +85,10 @@
                 </div>
                 <div class="profile-menu text-center">
                   <a class="menu-close button hvr-shutter-out-horizontal" href="#events">Upcoming Events</a>
-                  <a class="menu-close button hvr-shutter-out-horizontal" href="#documents">Documents</a>
+                  <a class="menu-close button hvr-shutter-out-horizontal stopscroll" href="#documents">Documents</a>
                   <a class="menu-close button hvr-shutter-out-horizontal" href="#">Competitions</a>
                   <a class="menu-close button hvr-shutter-out-horizontal" href="#">Reference Materials</a>
-                  <a class="menu-close button hvr-shutter-out-horizontal" href="#newmember">New Member Survey</a>
+                  <a class="menu-close button hvr-shutter-out-horizontal stopscroll" href="#newmember">New Member Survey</a>
                   <a class="menu-close button hvr-shutter-out-horizontal stopscroll" href="#checkin">Check In</a>
                 </div>
             </div>
@@ -443,14 +450,14 @@
             {
               /*window.open('google.com','_blank');*/
               window.location.href = '#newmember';
-              /*$('body').css('overflow', 'hidden');*/
+              $('body').css('overflow', 'hidden');
             }
             return true;
           }
       }
     </script>
   <div>
-  <a class="close" href="#">&times;</a>
+  <a class="close resumescroll" href="#">&times;</a>
     <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">Sign in</h1> 
   </div>
        <form id="form" name="form" target="_self" onsubmit="return validateForm()" action="javascript: postToGoogle()">
@@ -492,7 +499,7 @@
 <div class="popup">
 <div id="newmember-survey-holder">
   <div>
-  <a class="close" href="#">&times;</a>
+  <a class="close resumescroll" href="#">&times;</a>
     <center><h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">New Member</h1></center>
   </div>
   <div style="margin-top:-75px; overflow: hidden;">
@@ -510,7 +517,7 @@
 <div class="popup">
 <div id="documents-holder">
   <div>
-  <a class="close" href="#">&times;</a>
+  <a class="close resumescroll" href="#">&times;</a>
     <center><h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">Team Documents</h1></center>
   </div>
 
