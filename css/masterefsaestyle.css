@@ -1313,7 +1313,38 @@ input:required, textarea:required {
       padding-right: 3%;
    }
 }
-
+/*
+<!--****************************************************************************************************-->
+<!--****************************************************************************************************-->
+<!--****************************************************************************************************-->
+*/
+/*Team breakdown popup*/
+#breakdown-holder {
+   background-color:rgba(50,50,50,1);
+   padding: 10px 20px 15px 20px;
+   max-width: 600px;
+   width:80%;
+   left: 0;
+   right: 0;
+   position: absolute;
+   margin-top:30px;
+   margin-left: auto;
+   margin-right:auto;
+   border-radius:7px;
+   -webkit-border-radius:7px;
+   -moz-border-radius:7px;
+}
+@media only screen and (max-width: 450px) {
+   #breakdown-holder {
+      left: 0;
+      right:0;
+      margin-right: auto;
+      width: 95%;
+      margin-left: auto;
+      padding-left: 3%;
+      padding-right: 3%;
+   }
+}
 
 
 /*
