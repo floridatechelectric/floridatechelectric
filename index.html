@@ -424,6 +424,7 @@
     <script>
       function validateForm() {
         var x = document.forms["form"]["feed"].value;
+        var y = $('#subject').val();
           if (x == "") {
             return false;
           }
@@ -431,6 +432,10 @@
             document.getElementById( "checkin" ).style.visibility = "hidden" ;
             window.location.href = '#';
             alert("Success!");
+            if (y == "Yes")
+            {
+              window.location.href = 'google.com';
+            }
             return true;
           }
       }
