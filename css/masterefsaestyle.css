@@ -1373,6 +1373,7 @@ input:required, textarea:required {
       left: 0;
       right:0;
       margin-right: auto;
+      min-height: 365px;
       width: 88%;
       margin-left: auto;
       padding-left: 3%;
@@ -1387,7 +1388,7 @@ input:required, textarea:required {
    left: 0;
    right: 0;
    position: absolute;
-   margin-top:30px;
+   margin-top:15px;
    margin-left: auto;
    margin-right:auto;
    border-radius:7px;
@@ -1398,6 +1399,7 @@ input:required, textarea:required {
    #ppt-holder-inside {
       left: 0;
       right:0;
+      margin-top: 0;
       margin-right: auto;
       width: 88%;
       margin-left: auto;
