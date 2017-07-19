@@ -213,7 +213,7 @@ a.button {
     min-width: 400px;
     text-align: center;
 }
-@media screen and (max-width: 1595px)
+@media screen and (max-width: 8000px)
 {
     .efsae-header-image {
         background: url(../images/header-background.jpg) no-repeat 0px -280px;
