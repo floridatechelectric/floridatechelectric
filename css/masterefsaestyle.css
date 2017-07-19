@@ -1323,6 +1323,7 @@ input:required, textarea:required {
 #newmember-survey-holder {
    background-color:rgba(50,50,50,1);
    padding: 10px 20px 15px 20px;
+   height: 95vh;
    max-width:100%;
    width:80%;
    left: 0;
