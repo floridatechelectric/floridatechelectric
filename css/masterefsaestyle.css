@@ -1343,7 +1343,16 @@ input:required, textarea:required {
     overflow: hidden;
 }
 .survey-popup-padding {
-    
+    height: 95vh;
+    max-width:100%;
+    width:80%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    overflow: hidden;
+    margin-top:30px;
+    margin-left: auto;
+    margin-right:auto;
 }
 
 
