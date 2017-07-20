@@ -1501,7 +1501,8 @@ input:required, textarea:required {
 .document-holder {
    background-color:rgba(50,50,50,1);
    padding: 10px 20px 15px 20px;
-   width:90%;
+   width:93%;
+   max-width: 850px;
    left: 0;
    right: 0;
    height: calc(100vh - 50px);
