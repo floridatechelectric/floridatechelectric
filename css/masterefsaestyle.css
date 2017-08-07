@@ -315,7 +315,7 @@ a.button {
     color: #7dc242;
 }
 .nav-buttons > p {
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Ubuntu', arial;
     font-weight: 600;
     margin-bottom: 3px;
@@ -917,6 +917,7 @@ a.button {
 .ftfe-body-header {
     background: url(../images/FTFE-header-horizontal.png) no-repeat 0px 0px;
     background-size: contain;
+    background-position: center; 
     position: relative;
     width:60%;
     height:9vw;
@@ -925,8 +926,9 @@ a.button {
     overflow: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
 }
 /*@media (max-width: 800px) {
 .ftfe-body-header {
@@ -946,9 +948,6 @@ a.button {
 }*/
 @media (max-width: 550px) {
 .ftfe-body-header {
-    background: url(../images/FTFE-header-vertical.png) no-repeat 0px 0px;
-    background-size: contain;
-    position: relative;
     width:60%;
     height:9vw;
     left:0;
@@ -956,20 +955,20 @@ a.button {
     overflow: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 14px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     }
 }
 .body-header-accent{
     opacity: 1;
-    width: 75%;
+    width: 94%;
     position: relative;
     left: 0;
     right:0;
     margin-left: auto;
     margin-right: auto;
     height: 3px;
-    background-color: #999;
+    background-color: #666;
 }
 /*
 <!--****************************************************************************************************-->
@@ -1102,7 +1101,6 @@ a.button {
         right: 0;
         margin-left: auto;
         margin-right: auto;
-        margin-top: -40px;
     }
 }
 @media (max-width: 450px) {
@@ -1113,18 +1111,35 @@ a.button {
 }
 .body-header-2 {
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     color: #fff;
     text-decoration: none!important;
+    font-family: 'Ubuntu', arial;
+    font-weight: 300;
+    
 }
 .body-header-3 {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 10px;
     /*color: rgb(163, 35, 0);*/
-    color: #fff;
+    color: #7dc242;
     text-decoration: none!important;
+    font-family: 'Ubuntu', arial;
+    font-weight: 300;
+    
+}
+@media (max-width: 550px) {
+    .body-header-2 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+    .body-header-3 {
+        font-size: 18px;
+
+    }
 }
 .header-link {
     text-decoration: none!important;
@@ -1133,6 +1148,20 @@ a.button {
     text-decoration: none!important;
     color: rgb(163, 35, 0);
 }
+
+.prof-logo{
+    text-align: center;
+}
+
+.prof-logo img {
+    display: inline-block;
+}
+@media (max-width: 550px) { 
+    .prof-logo img {
+        height:120px
+    }
+}
+
 
 
 
