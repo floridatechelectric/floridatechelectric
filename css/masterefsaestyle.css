@@ -107,7 +107,7 @@ body {
     background-position: -32px 0px;
 }
 .social-icon i.icon1:hover {
-    background: rgb(163, 35, 0) url(../images/img-sprite.png) no-repeat -32px 0px;
+    background: #7dc242 url(../images/img-sprite.png) no-repeat -32px 0px;
     transform: rotateY(360deg);
 }
 .social-icon i.icon2 {
@@ -885,7 +885,7 @@ a.button {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #a32300;
+    background: #7dc242;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 50%;
