@@ -1171,7 +1171,7 @@ a.button {
   opacity:1;
 }
 .popup .close:hover {
-  color: rgb(163,35,0);
+  color: #7dc242;
 }
 .popup .content {
   max-height: 30%;
