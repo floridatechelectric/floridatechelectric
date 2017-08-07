@@ -1226,7 +1226,7 @@ h4{
 #contact-form input:focus,   
 #contact-form select:focus,   
 #contact-form textarea:focus {  
-   background-color: #E5E6E7; 
+   background-color: #7dc242; 
 }  
 #contact-form textarea {
    width:100%;
@@ -1237,18 +1237,18 @@ h4{
    width:100%;
    border:none;
    background:#991D57;
-   background-image:linear-gradient(bottom, #7dc242 0%, rgb(140,35,0) 52%);
-   background-image:-moz-linear-gradient(bottom, #7dc242 0%, rgb(140,35,0) 52%);
-   background-image:-webkit-linear-gradient(bottom, #7dc242 0%, rgb(150,35,0) 52%);
+   background-image:linear-gradient(bottom, rgb(100,100,100) 0%, rgb(100,100,100) 52%);
+   background-image:-moz-linear-gradient(bottom, rgb(100,100,100) 0%, rgb(100,100,100) 52%);
+   background-image:-webkit-linear-gradient(bottom, rgb(100,100,100) 0%, rgb(100,100,100) 52%);
    color:#FFF;
    margin:0 0 5px;
    padding:10px;
    border-radius:5px;
 }
 #contact-form button[type="submit"]:hover {
-   background-image:linear-gradient(bottom, rgb(170,35,0) 0%, rgb(170,35,0) 52%);
-   background-image:-moz-linear-gradient(bottom, rgb(170,35,0) 0%, rgb(170,35,0) 52%);
-   background-image:-webkit-linear-gradient(bottom, rgb(170,35,0) 0%, rgb(170,35,0) 52%);
+   background-image:linear-gradient(bottom, rgb(100,100,100) 0%, rgb(100,100,100) 52%);
+   background-image:-moz-linear-gradient(bottom, rgb(100,100,100) 0%, rgb(100,100,100) 52%);
+   background-image:-webkit-linear-gradient(bottom, rgb(100,100,100) 0%, rgb(100,100,100) 52%);
    -webkit-transition:background 0.3s ease-in-out;
    -moz-transition:background 0.3s ease-in-out;
    transition:background-color 0.3s ease-in-out;
