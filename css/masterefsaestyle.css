@@ -97,7 +97,7 @@ body {
     border-radius: 16px;
 }
 .social-icon i.icon:hover {
-    background: rgb(163, 35, 0) url(../images/img-sprite.png) no-repeat 0px 0px;
+    background: #7dc242 url(../images/img-sprite.png) no-repeat 0px 0px;
     transform: rotateY(360deg);
 }
 .social-icon i.icon {
@@ -114,14 +114,14 @@ body {
     background-position: -64px 0px;
 }
 .social-icon i.icon2:hover {
-    background: rgb(163, 35, 0) url(../images/img-sprite.png) no-repeat -64px 0px;
+    background: #7dc242 url(../images/img-sprite.png) no-repeat -64px 0px;
     transform: rotateY(360deg);
 }
 .social-icon i.icon3 {
     background-position: -96px 0px;
 }
 .social-icon i.icon3:hover {
-    background: rgb(163, 35, 0) url(../images/img-sprite.png) no-repeat -96px 0px;
+    background: #7dc242 url(../images/img-sprite.png) no-repeat -96px 0px;
     transform: rotateY(360deg);
 }
 .profile-menu {
@@ -163,7 +163,7 @@ a.button {
     left: 0px;
     top: 56px;
     height: 10px;
-    background-color: rgb(163, 35, 0);
+    background-color: #7dc242;
 }
 .efsae-header-background {
     opacity: 1;
@@ -308,7 +308,7 @@ a.button {
     text-align: center;
 }
 .nav-buttons > .active {
-    color: rgb(163, 35, 0);
+    color: #7dc242;
 }
 .nav-buttons > p {
     font-size: 18px;
@@ -471,7 +471,7 @@ p {
     left: 0px;
     top: 48px;
     height: 3px;
-    background-color: rgb(163, 35, 0);
+    background-color: #7dc242;
     /*z-index: 94;*/
     /*shows above sign in form*/
 }
@@ -1237,9 +1237,9 @@ h4{
    width:100%;
    border:none;
    background:#991D57;
-   background-image:linear-gradient(bottom, rgb(163,35,0) 0%, rgb(140,35,0) 52%);
-   background-image:-moz-linear-gradient(bottom, rgb(163,35,0) 0%, rgb(140,35,0) 52%);
-   background-image:-webkit-linear-gradient(bottom, rgb(163,35,0) 0%, rgb(150,35,0) 52%);
+   background-image:linear-gradient(bottom, #7dc242 0%, rgb(140,35,0) 52%);
+   background-image:-moz-linear-gradient(bottom, #7dc242 0%, rgb(140,35,0) 52%);
+   background-image:-webkit-linear-gradient(bottom, #7dc242 0%, rgb(150,35,0) 52%);
    color:#FFF;
    margin:0 0 5px;
    padding:10px;
