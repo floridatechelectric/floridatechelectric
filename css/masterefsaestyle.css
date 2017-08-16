@@ -1269,6 +1269,7 @@ a.button {
   margin-left: 70px;
   font-weight: normal;
   line-height: 22px;
+  color: #ccc;
   text-shadow: #000 1px 1px 2px;
 }
 
