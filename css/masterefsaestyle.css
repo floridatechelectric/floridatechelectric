@@ -1174,7 +1174,7 @@ a.button {
 */
 /*timeline*/
 #timeline {
-  width: 800px;
+  max-width: 900px;
   height: 350px;
   overflow: hidden;
   margin: 100px auto;
