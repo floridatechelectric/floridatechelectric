@@ -1206,7 +1206,7 @@ a.button {
 
 #dates .selected {
   font-size: 38px;
-  color:#7dc242;
+  color:#eee;
 }
 
 #issues {
@@ -1254,7 +1254,7 @@ a.button {
 }
 
 #issues li h1 {
-  color: #ffcc00;
+  color: #7dc242;
   font-size: 48px;
   margin: 20px 0;
   text-shadow: #000 1px 1px 2px;
@@ -1281,12 +1281,12 @@ a.button {
 
 #grad_left {
   left: 0;
-  background: url('../images/grad_left.png') repeat-y;
+  background: url('/images/left-arrow.png') repeat-y;
 }
 
 #grad_right {
   right: 0;
-  background: url('../images/grad_right.png') repeat-y;
+  background: url('/images/right-arrow.png') repeat-y;
 }
 
 #next,
@@ -1310,12 +1310,12 @@ a.button {
 
 #next {
   right: 0;
-  background: red;
+  /*background: red;*/
 }
 
 #prev {
   left: 0;
-  background: blue;
+  /*background: blue;*/
 }
 
 #next.disabled,
