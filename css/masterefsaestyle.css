@@ -1,3 +1,7 @@
+/*
+Lime green color: #7dc242;
+FIT crimson: rgb(163, 35, 0);
+*/
 html {
       background: #222;  
 }
@@ -1048,7 +1052,7 @@ a.button {
 }*/
 .about-text {
     text-align: justify;
-    color: #999;
+    color: #ccc;
     width: 100%;
     left: 0;
     right: 0;
@@ -1058,7 +1062,7 @@ a.button {
 }
 .about-text-2 {
     text-align: justify;
-    color: #999;
+    color: #ccc;
     width: 100%;
     left: 0;
     right: 0;
