@@ -1201,10 +1201,12 @@ a.button {
 #dates a {
   line-height: 38px;
   padding-bottom: 10px;
+  color: #aaa;
 }
 
 #dates .selected {
   font-size: 38px;
+  color:#7dc242;
 }
 
 #issues {
