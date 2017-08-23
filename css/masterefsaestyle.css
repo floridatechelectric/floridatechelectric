@@ -1377,10 +1377,12 @@ a.button {
     color: #ccc;
 }
 .address p a {
-    color: #ff7200;
+    color: #ccc;
+    text-decoration: none;
 }
 .address p a:hover{
-    color: #999;
+    color: #7dc242;
+    text-decoration: none;
 }
 .address h4 {
     font-size: 1.8em;
