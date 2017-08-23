@@ -481,8 +481,14 @@ p {
     top: 48px;
     height: 3px;
     background-color: #7dc242;
-    /*z-index: 94;*/
-    /*shows above sign in form*/
+}
+.menu-accent-top {
+    position: relative;
+    opacity: 1;
+    width: 100%;
+    left: 0px;
+    height: 3px;
+    background-color: #7dc242;
 }
 .button-more {
     visibility: hidden;
