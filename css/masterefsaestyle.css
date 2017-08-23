@@ -1421,14 +1421,14 @@ a.button {
 }
 .contact input[type="text"] {
     width: 48.3%;
-    color: #999;
+    color: #ccc;
     float: left;
     background: none;
     outline: none;
     font-size: 1em;
     padding: .7em 1em;
     margin-bottom: 1.5em;
-    border: solid 1px #999;
+    border: solid 1px #ccc;
     -webkit-appearance: none;
     display: inline-block;
 }
