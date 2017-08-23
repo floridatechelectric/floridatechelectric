@@ -1394,14 +1394,14 @@ a.button {
 }
 .address-row span.glyphicon {
     font-size: 1.2em;
-    border: 2px solid #aaa;
+    border: 2px solid #ccc;
     padding: 1em;
-    color: #555;
+    color: #ccc;
     transition:.5s all;
 }
 .address-row h5 {
     font-size: 1.6em;
-    color: #333;
+    color: #ddd;
     margin-bottom: .4em;
 }
 .address p {
