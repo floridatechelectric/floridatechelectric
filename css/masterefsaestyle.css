@@ -999,6 +999,7 @@ a.button {
     border-bottom: 1px solid #E4E4E4;
     width: 35%;
     margin: 0 auto;
+    font-family: 'Nova Round', cursive;
 }
 .title h3:before {
     content: '';
