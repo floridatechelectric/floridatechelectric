@@ -1178,9 +1178,11 @@ a.button {
   width: 90%;
   height: 350px;
   overflow: hidden;
-  margin: 100px auto;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top:100px;
+  margin-bottom:0px;
   position: relative;
-  background: url('../images/dot.gif') left 45px repeat-x;
 }
 
 #dates {
