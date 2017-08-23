@@ -1474,6 +1474,15 @@ a.button {
     background: url(../images/ieee-white.png) no-repeat 0px 0px;
     background-size: cover;
 }
+.center-footer-image-holder {
+    max-height: 100px;
+    background: url(../images/fit-grayscale.png) no-repeat 0px 0px;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
 .right-footer-image-holder {
     float: right;
     max-height: 100px;
