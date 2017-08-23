@@ -1466,24 +1466,23 @@ a.button {
     width:96%; 
     margin-left: auto; 
     margin-right: auto; 
-    height:50px;
+    height:100px;
 }
 .left-footer-image-holder {
     float: left;
-    max-height: 100px;
-    height:80%;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    height:80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 200px;
     background: url(../images/ieee-white.png) no-repeat 0px 0px;
     background-size: contain;
 }
 .center-footer-image-holder {
     max-height: 100px;
-    height: 95%;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
-    width: 200px;
+    height: 95px;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    width: 95px;
     background: url(../images/fit-grayscale.png) no-repeat 0px 0px;
     background-size: contain;
     left: 0;
@@ -1493,12 +1492,11 @@ a.button {
 }
 .right-footer-image-holder {
     float: right;
-    max-height: 100px;
-    height:80%;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    height:80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 200px;
-    background: url(../images/ieee-white.png) no-repeat 0px 0px;
+    background: url(../images/sae-white.png) no-repeat 0px 0px;
     background-size: contain;
 }
 
