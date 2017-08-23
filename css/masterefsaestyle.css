@@ -1471,13 +1471,21 @@ a.button {
 .left-footer-image-holder {
     float: left;
     max-height: 100px;
+    height:80%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 200px;
     background: url(../images/ieee-white.png) no-repeat 0px 0px;
-    background-size: cover;
+    background-size: contain;
 }
 .center-footer-image-holder {
     max-height: 100px;
+    height: 95%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    width: 200px;
     background: url(../images/fit-grayscale.png) no-repeat 0px 0px;
-    background-size: cover;
+    background-size: contain;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -1486,8 +1494,12 @@ a.button {
 .right-footer-image-holder {
     float: right;
     max-height: 100px;
+    height:80%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 200px;
     background: url(../images/ieee-white.png) no-repeat 0px 0px;
-    background-size: cover;
+    background-size: contain;
 }
 
 
