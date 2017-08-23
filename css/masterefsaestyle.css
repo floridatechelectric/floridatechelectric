@@ -987,6 +987,36 @@ a.button {
 <!--****************************************************************************************************-->
 */
 /*Body*/
+.title h3 {
+    font-size: 3em;
+    text-align: center;
+    color: #fe7200;
+    font-weight: 200;
+    position: relative;
+    margin-bottom: 1em;
+    margin-left: -7.5%;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #E4E4E4;
+    width: 35%;
+    margin: 0 auto;
+}
+.title h3:before {
+    content: '';
+    width: 70px;
+    height: 3px;
+    background: #fe7200;
+    position: absolute;
+    bottom: -2px;
+    left: 40%;
+    display: block;
+}
+.title p {
+    font-size: 1em;
+    color: #999;
+    line-height: 1.8em;
+    text-align: center;
+    margin-top: 1.5em;
+}
 .home {
     position: relative;
     width: 100%;
