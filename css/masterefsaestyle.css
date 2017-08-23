@@ -1408,11 +1408,11 @@ a.button {
     resize: none;
     width: 100%;
     background: none;
-    color: #999;
+    color: #ccc;
     font-size: 1em;
     outline: none;
     padding: .6em .8em;
-    border: solid 1px #999;
+    border: solid 1px #ccc;
     min-height: 12em;
     -webkit-appearance: none;
 }
@@ -1436,16 +1436,16 @@ a.button {
   border-color:#ff7200;
 }
 ::-webkit-input-placeholder {
-  color:#999 !important;
+  color:#ccc !important;
 }
 :-moz-placeholder { /* Firefox 18- */
-  color:#999 !important;
+  color:#ccc !important;
 }
 ::-moz-placeholder {  /* Firefox 19+ */
-  color:#999 !important;
+  color:#ccc !important;
 }
 :-ms-input-placeholder {  
-  color:#999 !important;
+  color:#ccc !important;
 }
 
 /*
