@@ -1470,19 +1470,18 @@ a.button {
 }
 .left-footer-image-holder {
     float: left;
-    height:80px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    height:60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 200px;
     background: url(../images/ieee-white.png) no-repeat 0px 0px;
     background-size: contain;
 }
 .center-footer-image-holder {
-    max-height: 100px;
-    height: 95px;
-    margin-top: 2.5px;
-    margin-bottom: 2.5px;
-    width: 95px;
+    position: absolute;
+    height: 100px;
+    margin-top: 15px;
+    width: 80px;
     background: url(../images/fit-grayscale.png) no-repeat 0px 0px;
     background-size: contain;
     left: 0;
@@ -1492,10 +1491,10 @@ a.button {
 }
 .right-footer-image-holder {
     float: right;
-    height:80px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 200px;
+    height:70px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 120px;
     background: url(../images/sae-white.png) no-repeat 0px 0px;
     background-size: contain;
 }
