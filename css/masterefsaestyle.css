@@ -1469,10 +1469,16 @@ a.button {
     height:50px;
 }
 .left-footer-image-holder {
-
+    float: left;
+    max-height: 100px;
+    background: url(../images/ieee-white.png) no-repeat 0px 0px;
+    background-size: cover;
 }
 .right-footer-image-holder {
-
+    float: right;
+    max-height: 100px;
+    background: url(../images/ieee-white.png) no-repeat 0px 0px;
+    background-size: cover;
 }
 
 
