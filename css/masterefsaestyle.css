@@ -1480,7 +1480,7 @@ a.button {
 .center-footer-image-holder {
     position: absolute;
     height: 100px;
-    margin-top: 15px;
+    margin-top: 10px;
     width: 80px;
     background: url(../images/fit-grayscale.png) no-repeat 0px 0px;
     background-size: contain;
@@ -1494,6 +1494,7 @@ a.button {
     height:70px;
     margin-top: 15px;
     margin-bottom: 15px;
+    margin-right: 30px;
     width: 120px;
     background: url(../images/sae-white.png) no-repeat 0px 0px;
     background-size: contain;
