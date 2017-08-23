@@ -990,7 +990,7 @@ a.button {
 .title h3 {
     font-size: 3em;
     text-align: center;
-    color: #fe7200;
+    color: #7dc242;
     font-weight: 200;
     position: relative;
     margin-bottom: 1em;
@@ -1005,7 +1005,7 @@ a.button {
     content: '';
     width: 20%;
     height: 3px;
-    background: #fe7200;
+    background: #7dc242;
     position: absolute;
     bottom: -2px;
     left: 40%;
@@ -1381,8 +1381,8 @@ a.button {
     margin-top: 3em;
 }
 .address-row:hover span.glyphicon {
-    border-color: #FE7200;
-    color: #FE7200;
+    border-color: #7dc242;
+    color: #7dc242;
     -webkit-transform: rotatey(360deg);
     -moz-transform: rotatey(360deg);
     transform: rotatey(360deg);  
@@ -1415,7 +1415,7 @@ a.button {
 }
 .address h4 {
     font-size: 1.8em;
-    color: #FE7200;
+    color: #7dc242;
     margin-bottom: 0.6em;
     text-transform: uppercase;
 }
