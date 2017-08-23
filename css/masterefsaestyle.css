@@ -1003,7 +1003,7 @@ a.button {
 }
 .title h3:before {
     content: '';
-    width: 70px;
+    width: 20%;
     height: 3px;
     background: #fe7200;
     position: absolute;
