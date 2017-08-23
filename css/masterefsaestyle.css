@@ -1434,8 +1434,8 @@ a.button {
 }
 .contact  input[type="submit"]:hover {
     background: none;
-    color: #ff7200;
-  border-color:#ff7200;
+    color: #7dc242;
+    border-color: #7dc242;
 }
 ::-webkit-input-placeholder {
   color:#ccc !important;
