@@ -1479,6 +1479,7 @@ a.button {
 }
 .center-footer-image-holder {
     position: absolute;
+    display: block;
     height: 100px;
     margin-top: 10px;
     width: 80px;
@@ -1499,7 +1500,14 @@ a.button {
     background: url(../images/sae-white.png) no-repeat 0px 0px;
     background-size: contain;
 }
-
+@media only screen and (max-width: 635px) {
+   .center-footer-image-holder {
+      display: none;
+   }
+   .right-footer-image-holder {
+        height: 60px;
+        margin-top:20px;
+   }
 
 /*
 <!--****************************************************************************************************-->
