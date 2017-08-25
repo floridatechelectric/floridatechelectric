@@ -283,16 +283,18 @@
 <!--****************************************************************************************************-->
 <!--****************************************************************************************************-->
 <div class="about-us" id="about-us" name="about-us" style="margin-left: 2%; margin-right: 2%;">
-    <h2 class="w3-wide w3-center" style="color: #fff; width: 96%; padding-top: 55px; margin-top: 0; margin-bottom: 10px;">ABOUT US</h2>
+    <h2 class="w3-wide w3-center" style="color: #fff; width: 96%; padding-top: 55px; margin-top: 0; margin-bottom: 35px;">ABOUT US</h2>
     <div class="about" style="padding-bottom: 25px;">
     	<div class="about-half equalheight1"> 
-    		<h3 class="body-header-3">Our Mission</h3>
+    	<center><img src="images/mission-logo.png" class="img-responsive" alt=""/></center>
+    		<h3 class="body-header-3" style="padding-top: 5px;">Our Mission</h3>
         	<p class="about-text-2"><br>
 				Florida Tech Formula Electric is a team established and run by students with a goal to develop a multi-disciplinary racing program at Florida Tech consisting of partnerships between SAE, IEEE, and the sustainability effort on campus. These partnerships help to prepare the next generation of industry leaders by providing students with oppurtunities to design, fabricate, and test a real world product. All of this is done while helping to promote and research the world sustainability effort.
 			</p>
 		</div>
 		<div class="about-half equalheight1"> 
-			<h3 class="body-header-3">Our Team</h3>
+		<center><img src="images/team-pic.jpg" class="img-responsive" alt=""/></center>
+			<h3 class="body-header-3" style="padding-top: 5px;">Our Team</h3>
 			<p class="about-text-2"><br>
 				In order to handle the broad scope of this build, a mixture of mechanical, aerospace, electrical, and computer engineering students have come together to form a team. Mechanical and Aerospace Engineering students handle the design, construction, and structural analysis, while the Electrical Engineering students focus on power delivery and instrumentation. The Computer Engineering students program all the different controllers and interfaces as well as log sensor data for troubleshooting.
 				<!--In addition to these roles, some students have stepped into roles as managers and Systems Engineers to help organize the team and develop leadership skills.-->
@@ -580,7 +582,52 @@
 <!--****************************************************************************************************-->
 <!--****************************************************************************************************-->
 <div class="contact" id="contact" style="padding-bottom: 4em; padding-top: 3em;">
-          <div class="container">
+    <div class="container">
+    <script>
+      function postToGoogle2() {
+      var field1 = $('#firstName').val();
+      var field2 = $('#lastName').val();
+      var field3 = $('#email').val();
+      var field4 = $('#number').val();
+      var field5 = $('#message').val();
+
+      $.ajax({
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSeK2MtTY7Oj5ijFRQEBjjQ3a7V5qlzZMWGNlJsnzBJeTawkIw/formResponse",
+          data: {
+            "entry.1114539075": field1,
+            "entry.429219511": field2,
+            "entry.1973346511": field3,
+            "entry.912526124": field4,
+            "entry.608237595": field5
+          },
+          type: "POST",
+          dataType: "xml",
+          statusCode: {
+            0: function() {
+              
+            },
+            200: function() {
+              
+            }
+          }
+        });
+      $("#form2")[0].reset();
+      }
+    </script>
+    <script>
+      function validateForm2() {
+        var x = document.forms["form2"]["email"].value;
+        var y = $('#email').val();
+          if (x == "") {
+            return false;
+          }
+          else {
+            window.location.href = '#';
+            alert("Success!");
+            return true;
+          }
+      }
+    </script>
 		<h2 class="w3-wide w3-center" style="color: #fff; margin-top: 5px; margin-bottom: 30px;">CONTACT US</h2>
             <div class="contact-grids">
               <div class="col-md-5 address">
@@ -600,8 +647,7 @@
                   </div>
                   <div class="col-md-10 address-right">
                     <h5>Email</h5>
-                    <p><a href=
-                    "mailto:atassinari2014@my.fit.edu">atassinari2014@my.fit.edu</a></p>
+                    <p><a href="mailto:atassinari2014@my.fit.edu">atassinari2014@my.fit.edu</a></p>
                   </div>
                 </div>
                 <div class="address-row">
@@ -615,18 +661,17 @@
                 </div>
               </div>
               <div class="col-md-7 contact-form">
-                <form action="#" method="post">
-                  <input name="First Name" placeholder="First Name" required="" type=
-                  "text"> <input class="email" name="Last Name" placeholder="Last Name"
-                  required="" type="text"> <input name="Number" placeholder=
-                  "Mobile Number" required="" type="text"> <input class="email" name=
-                  "Email" placeholder="Email" required="" type="text"> 
-                  <textarea name="Message" placeholder="Message" required=""></textarea>
+                <form name="form2" id="form2" target="_self" onsubmit="return validateForm2();" action="javascript: postToGoogle2()">
+                  <input name="firstName" id="firstName" placeholder="First Name" required="" type="text"> 
+                  <input class="email" name="lastName" id ="lastName" placeholder="Last Name" required="" type="text"> 
+                  <input name="number" id="number" placeholder="Mobile Number" required="" type="text"> 
+                  <input class="email" name="email" id ="email" placeholder="Email" required="" type="text"> 
+                  <textarea name="message" id="message" placeholder="Message" required=""></textarea>
                   <input type="submit" value="SUBMIT">
                 </form>
               </div>
             </div>
-          </div>
+    </div>
 </div>
 
 
