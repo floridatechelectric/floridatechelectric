@@ -995,8 +995,8 @@ a.button {
     right:0;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
     margin-bottom: 2%;
     transition: opacity 500ms;
     visibility: visible;
@@ -1134,7 +1134,7 @@ a.button {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 10px;
-    /*color: rgb(163, 35, 0);*/
+    text-shadow: #000 1px 1px 2px;
     color: #7dc242;
     text-decoration: none!important;
     font-family: 'Ubuntu', arial;
@@ -1172,7 +1172,13 @@ a.button {
         height:120px
     }
 }
-
+.w3-wide {
+    text-shadow: #000 1px 1px 2px;
+    color: #fff;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+}
 /*
 <!--****************************************************************************************************-->
 <!--****************************************************************************************************-->
@@ -1282,6 +1288,15 @@ a.button {
   color: #ccc;
   text-shadow: #000 1px 1px 2px;
 }
+@media only screen and (max-width: 500px) {
+    #issues li p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #issues li h1 {
+        padding-left: 0;
+    }
+}
 
 #grad_left,
 #grad_right {
@@ -1334,11 +1349,86 @@ a.button {
 #prev.disabled {
   opacity: 0.2;
 }
-
-
-
-
-
+/*
+<!--****************************************************************************************************-->
+<!--****************************************************************************************************-->
+<!--****************************************************************************************************-->
+*/
+/*picture gallery*/
+a.gallery-button {
+    font-size: 1em;
+    text-align: center;
+    text-shadow: #000 1px 1px 2px;
+    background: #666;
+    text-decoration: none!important;
+    padding: 0.5em;
+    color: #fff;
+    display: block;
+    width: 20%;
+    margin-left: 6.6%;
+    margin-right: 6.6%;
+    margin-top:20px;
+    margin-bottom: 40px;
+    float:left;
+}
+@media only screen and (max-width: 600px){
+    a.gallery-button {
+        width:80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: -15px;
+    }
+    .w3-wide {
+        margin-bottom: 50px;
+    }
+}
+.pictures {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 70px;
+    padding-top: 3em;
+}
+div.gallery {
+    /*border: 1px solid #ccc;*/
+}
+div.gallery:hover {
+    border: 1px solid #434343;
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+    color: #ccc;
+    font-size: 0.9em;
+    text-shadow: #000 1px 1px 2px;
+}
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 991px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+        box-sizing: border-box;
+    }
+}
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 /*
 <!--****************************************************************************************************-->
 <!--****************************************************************************************************-->
@@ -1368,13 +1458,15 @@ a.button {
     transition:.5s all;
 }
 .address-row h5 {
+    margin-top: 0;
     font-size: 1.6em;
     color: #7dc242;
-    margin-bottom: .4em;
+    margin-bottom: .3em;
 }
 .address p {
     font-size: 0.9em;
     color: #ccc;
+    margin-bottom: 30px;
 }
 .address p a {
     color: #ccc;
@@ -1415,7 +1507,7 @@ a.button {
     outline: none;
     padding: .6em .8em;
     border: solid 1px #ccc;
-    min-height: 12em;
+    min-height: 8em;
     -webkit-appearance: none;
 }
 .contact input[type="submit"] {
@@ -1449,7 +1541,70 @@ a.button {
 :-ms-input-placeholder {  
   color:#ccc !important;
 }
-
+#contact-info {
+    display: block;
+    text-shadow: #000 1px 1px 2px;
+}
+#leave-message {
+    font-size: 1.8em; 
+    color: #7dc242; 
+    text-transform: uppercase; 
+    text-shadow: #000 1px 1px 2px;
+    margin-bottom: 0.6em; 
+    text-align: center;
+}
+#mobile-divider {
+    display: none;
+}
+@media only screen and (max-width: 1200px) {
+    .contact input[type="text"] {
+        width: 100%;
+    }
+    .contact input.email {
+        margin-left: 0;
+    }
+    .address p {
+        margin-bottom: 70px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .address-right {
+        margin-bottom: 45px;
+    }
+    .contact-us-glyph {
+        text-align: center;
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+    .contact-us {
+        text-align: center;
+    }
+    #contact-info {
+        display: none;
+    }
+    #leave-message {
+        text-shadow: #000 1px 1px 2px;
+        font-size: 30px; 
+        color: #fff;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        letter-spacing: 4px;
+    }
+    #mobile-divider {
+        display: block;
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .contact input[type="submit"] {
+        width: 100%;
+    }
+    .contact-form {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
 
 
 /*
@@ -1505,8 +1660,14 @@ a.button {
       display: none;
    }
    .right-footer-image-holder {
-        height: 60px;
-        margin-top:20px;
+        height: 55px;
+        margin-top:23px;
+        margin-right: -15px;
+   }
+   .footer-content {
+    margin-left: 2%;
+    margin-right: 0;
+    width: 98%;
    }
 }
 /*
