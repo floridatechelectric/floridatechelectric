@@ -21,587 +21,536 @@
   <script src="js/fullcalendar.min.js"></script>
   <script>
     $(document).ready(function () {
-        var bigSlideAPI = ($('.menu-link').bigSlide()).bigSlideAPI;
-        $('.menu-close').click(function() {
-          bigSlideAPI.view.toggleClose();
-        });
-   });
+      var bigSlideAPI = ($('.menu-link').bigSlide()).bigSlideAPI;
+      $('.menu-close').click(function () {
+        bigSlideAPI.view.toggleClose();
+      });
+    });
   </script>
   <script>
+    $(document).ready(function () {
 
-	$(document).ready(function() {
+      $('#calendar').fullCalendar({
+        header: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'listDay,listWeek,month'
+        },
+        views: {
+          listDay: { buttonText: 'list day' },
+          listWeek: { buttonText: 'list week' }
+        },
 
-		$('#calendar').fullCalendar({
-			header: {
-				left: 'prev,next today',
-				center: 'title',
-				right: 'listDay,listWeek,month'
-			},
-			views: {
-				listDay: { buttonText: 'list day' },
-				listWeek: { buttonText: 'list week' }
-			},
+        defaultDate: '2017-09-01',
+        navLinks: true,
+        editable: true,
+        eventLimit: true, // allow "more" link when too many events
+        events: [
+          {
+            title: 'Labor Day',
+            start: '2017-09-04'
+          },
+          //{
+          //title: 'Long Event',
+          //start: '2017-05-07',
+          //end: '2017-05-10'
+          //},
+          {
+            id: 999,
+            title: 'General Meeting',
+            start: '2017-08-28T18:30:00'
+          },
+          {
+            id: 999,
+            title: 'General Meeting',
+            start: '2017-09-11T18:30:00'
+          },
+          {
+            id: 999,
+            title: 'General Meeting',
+            start: '2017-09-18T18:30:00'
+          },
+          {
+            id: 999,
+            title: 'General Meeting',
+            start: '2017-09-25T18:30:00'
+          },
+          {
+            id: 999,
+            title: 'General Meeting',
+            start: '2017-10-02T18:30:00'
+          },
+          {
+            title: 'Conference',
+            start: '2017-05-11',
+            end: '2017-05-13'
+          },
+          {
+            title: 'Meeting',
+            start: '2017-05-12T10:30:00',
+            end: '2017-05-12T12:30:00'
+          },
+          {
+            title: 'Lunch',
+            start: '2017-05-12T12:00:00'
+          },
+          {
+            title: 'Meeting',
+            start: '2017-05-12T14:30:00'
+          },
+          {
+            title: 'Happy Hour',
+            start: '2017-05-12T17:30:00'
+          },
+          {
+            title: 'Dinner',
+            start: '2017-05-12T20:00:00'
+          },
+          {
+            title: 'Birthday Party',
+            start: '2017-05-13T07:00:00'
+          },
+          {
+            title: 'Click for Google',
+            url: 'http://google.com/',
+            start: '2017-05-28'
+          }
+        ]
+      });
 
-			defaultDate: '2017-09-01',
-			navLinks: true,
-			editable: true,
-			eventLimit: true, // allow "more" link when too many events
-			events: [
-				{
-					title: 'Labor Day',
-					start: '2017-09-04'
-				},
-				//{
-					//title: 'Long Event',
-					//start: '2017-05-07',
-					//end: '2017-05-10'
-				//},
-				{
-					id: 999,
-					title: 'General Meeting',
-					start: '2017-08-28T18:30:00'
-				},
-				{
-					id: 999,
-					title: 'General Meeting',
-					start: '2017-09-11T18:30:00'
-				},
-				{
-					id: 999,
-					title: 'General Meeting',
-					start: '2017-09-18T18:30:00'
-				},
-				{
-					id: 999,
-					title: 'General Meeting',
-					start: '2017-09-25T18:30:00'
-				},
-				{
-					id: 999,
-					title: 'General Meeting',
-					start: '2017-10-02T18:30:00'
-				},
-				{
-					title: 'Conference',
-					start: '2017-05-11',
-					end: '2017-05-13'
-				},
-				{
-					title: 'Meeting',
-					start: '2017-05-12T10:30:00',
-					end: '2017-05-12T12:30:00'
-				},
-				{
-					title: 'Lunch',
-					start: '2017-05-12T12:00:00'
-				},
-				{
-					title: 'Meeting',
-					start: '2017-05-12T14:30:00'
-				},
-				{
-					title: 'Happy Hour',
-					start: '2017-05-12T17:30:00'
-				},
-				{
-					title: 'Dinner',
-					start: '2017-05-12T20:00:00'
-				},
-				{
-					title: 'Birthday Party',
-					start: '2017-05-13T07:00:00'
-				},
-				{
-					title: 'Click for Google',
-					url: 'http://google.com/',
-					start: '2017-05-28'
-				}
-			]
-		});
-		
-	});
-
-</script>
+    });
+  </script>
   <script>
-   (function() {
-     var cx = '013619722382737468400:hui1rh2pvli';
-     var gcse = document.createElement('script');
-     gcse.type = 'text/javascript';
-     gcse.async = true;
-     gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
-     var s = document.getElementsByTagName('script')[0];
-     s.parentNode.insertBefore(gcse, s);
-   })();
-</script>
-<script>
-  $(function() {
-    $('.stopscroll').click(function() {
-        document.body.style.overflow = "hidden"; 
+    (function () {
+      var cx = '013619722382737468400:hui1rh2pvli';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
+  <script>
+    $(function () {
+      $('.stopscroll').click(function () {
+        document.body.style.overflow = "hidden";
+      });
     });
-});
-</script>
-<script>
-  $(function() {
-    $('.resumescroll').click(function() {
+  </script>
+  <script>
+    $(function () {
+      $('.resumescroll').click(function () {
         document.body.style.overflow = "visible";
+      });
     });
-});
-</script>
-<gcse:searchresults-only>
-</gcse:searchresults-only>
-<script src="js/timeline.js">
-</script>
-<script>
-    $(function(){
-    			$().timelinr({
-    				arrowKeys: 'true'
-    			})
-    		});
+  </script>
+  <gcse:searchresults-only>
+  </gcse:searchresults-only>
+  <script src="js/timeline.js">
+
+  </script>
+  <script>
+    $(function () {
+      $().timelinr({
+        arrowKeys: 'true'
+      })
+    });
   </script>
 </head>
 
 <body>
   <div class="body-back">
     <div class="masthead pdng-stn1">
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
       <div class="panel" id="menu" role="navigation">
-            <div class="exitmenu">
-                <a class="menu-link active" href="#menu">
-                  <i class="fa fa-remove" style="font-size:18px; color: #fff;"></i>
-                </a>
-            </div>
-            <div class="logoholder">
-              <a href="#">
-                <div class="rev-logo">
-                </div>
-              </a>
-            </div>
-            <div class="wrap-content">
-                <div class="social-icon">
-                  <a href="https://www.facebook.com/FITFormulaElectric">
-                    <i class="icon"></i>
-                  </a>
-                  <a href="https://twitter.com">
-                    <i class="icon1"></i>
-                  </a>
-                  <a href="https://www.instagram.com">
-                    <i class="icon2"></i>
-                  </a>
-                  <a href="https://www.linkedin.com">
-                    <i class="icon3"></i>
-                  </a>
-                </div>
-                <div class="profile-menu text-center">
-                  <a class="menu-close button hvr-shutter-out-horizontal" href="#rules">Rules and Forms</a>
-                  <a class="menu-close button hvr-shutter-out-horizontal stopscroll" href="#documents">2017 Documents</a>
-                  <a class="menu-close button hvr-shutter-out-horizontal stopscroll" href="#reference">2007 Reference</a>
-                  <a class="menu-close button hvr-shutter-out-horizontal stopscroll" href="#external">External Links</a>
-                  <a class="menu-close button hvr-shutter-out-horizontal stopscroll" href="#newmember">New Member Survey</a>
-                  <a class="menu-close button hvr-shutter-out-horizontal stopscroll" href="#checkin">Check In</a>
-                </div>
-            </div>
-          </div><!--end of panel-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-          <div class="phone-box wrap push" id="home-top" name="home-top">
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-        <div class="efsae-header">
-          <div class="efsae-header-accent">
-          </div>
-          <div class="efsae-header-background">
-          </div>
-          <div class="efsae-header-left">
-          <!--SAE Logo-->
-          </div>
-          <div class="efsae-header-right">
-          </div>
-        </div><!--end of efsae-header-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-        <div class="efsae-header-image-holder">
-          <div class="efsae-header-image">
-          </div>
+        <div class="exitmenu">
+          <a class="menu-link active" href="#menu"><i class="fa fa-remove" style="font-size:18px; color: #fff;"></i></a>
         </div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-        <div id="sticky-anchor-2" class="sticky-anchor">
+        <div class="logoholder">
+          <a href="#">
+            <div class="rev-logo">
             </div>
-            <div id="sticky-anchor" class="sticky-anchor">
-            </div>
-            <div id="sticky" class="stick">
-              <div class="navigation-menu-stuck">
-                <div class="navigation-menu">
-                  <div class="menu-left">
-                    <a class="menu-link" href="#menu">
-                     <i class="fa fa-navicon"></i>
-                    </a>
-                  </div><!--end of menu-left-->
-                  <div class="menu-mid">
-                    <a href="#home-top" style="display:block">
-                          <div class="button-1">
-                              <div class="nav-buttons">
-                                <p class="active">HOME</p>
-                              </div>
-                          </div>
-                        </a>
-                        <a href="#about-us" style="display:block">
-                          <div class="button-2">
-                              <div class="nav-buttons">
-                                <p class="passive">ABOUT US</p>
-                              </div>
-                          </div>
-                        </a>
-                        <a href="#events" style="display:block">
-                          <div class="button-3">
-                              <div class="nav-buttons">
-                                <p class="passive">CALENDAR</p>
-                              </div>
-                          </div>
-                        </a>
-                        <a href="#pictures" style="display:block">
-                          <div class="button-4">
-                              <div class="nav-buttons">
-                                <p class="passive">PICTURES</p>
-                              </div>
-                          </div>
-                        </a>
-                        <a href="#contact" style="display:block">
-                          <div class="button-5">
-                              <div class="nav-buttons">
-                                <p class="passive">CONTACT US</p>
-                              </div>
-                          </div>
-                        </a>
-                        <div class="wrapper-dropdown-2" id="dd0" tabindex="1">
-                            <div class="button-more" style="left:177px; width: 100px;">
-                              <div class="nav-buttons-more">
-                                  <p class="passive">MORE &#9660;</p>
-                              </div>
-                            </div>
-                            <div id="dropdown-fixed" style="position:relative; top: 4px; width: 264px; left: 50%; margin-left: -128px; overflow:visible; z-index:95;">
-                              <div class="dropdown-holder">
-                                  <ul class="dropdown" style=" top:45px; z-index:95;">
-                                    <li style="font-size:22px">
-                                        <center>
-                                          <a href="#events">Calendar</a>
-                                        </center>
-                                    </li>
-                                    <li style="font-size:22px">
-                                        <center>
-                                          <a href="#">Members</a>
-                                        </center>
-                                    </li>
-                                    <li style="font-size:22px">
-                                        <center>
-                                          <a href="#events">Events</a>
-                                        </center>
-                                    </li>
-                                    <li style="font-size:22px">
-                                        <center>
-                                          <a href="#">Contact Us</a>
-                                        </center>
-                                    </li>
-                                  </ul>
-                              </div>
-                            </div>
-                            <script type="text/javascript">
-                              function DropDown(el) 
-                              {
-                                  this.dd = el;
-                                  this.initEvents();
-                                }
-                                DropDown.prototype = 
-                                {
-                                  initEvents : function() 
-                                  {
-                                      var obj = this;
-                                      obj.dd.on('click', function(event)
-                                      {
-                                          $(this).toggleClass('active');
-                                            event.stopPropagation();
-                                      });  
-                                  }
-                                }
-                                $(function() 
-                                {
-                                  var dd = new DropDown( $('#dd0') );
-                                  $(document).click(function() 
-                                  {
-                                      $('.wrapper-dropdown-2').removeClass('active');
-                                  });
-                                });
-                            </script>
-                        </div>
-                        <div class="menu-accent" style="left: 61px;">
-                        </div>
-                        <div class="menu-accent" style="left: 175px;">
-                        </div>
-                        <div class="menu-accent-hiding" style="left: 295px;">
-                        </div>
-                        <div class="menu-accent-hiding" style="left: 405px;">
-                        </div>
-                  </div><!--end of menu-mid-->
-                  <div class="menu-right">
-                    <div class="wrapper-dropdown-2" id="dd3" tabindex="1">
-                            <div class="button-search">
-                              <div class="cd-main-header">
-                                  <ul class="cd-header-buttons" style="margin-top:53px; margin-right:-30px">
-                                    <li>
-                                        <a class="cd-search-trigger" href="#cd-search">
-                                          <span></span>
-                                        </a>
-                                    </li>
-                                  </ul>
-                              </div>
-                            </div>
-                        </div>
-                  </div><!--end of menu-right-->
-                  <div class="menu-accent-bottom">
-                  </div>
-                  <div class="cd-search" id="cd-search">
-                        <form action="#" method="get">
-                            <input name="q" placeholder="Search..." type="text">
-                            <input style="position: absolute; left: -9999px; width: 1px; height: 1px;" tabindex="-1" type="submit">
-                        </form>
-                      </div>
-                </div><!--end of navigation-menu-->
-              </div><!--end of navigation-menu-stuck-->
-            </div><!--end of sticky-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->           
-<div class="ftfe-body-header"></div>
-<div class="body-header-accent"></div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<div class="about-us" id="about-us" name="about-us" style="margin-left: 2%; margin-right: 2%;">
-    <h2 class="w3-wide w3-center" style="width: 96%; padding-top: 55px; margin-top: 0; margin-bottom: 35px;">ABOUT US</h2>
-    <div class="about" style="padding-bottom: 25px;">
-    	<div class="about-half equalheight1"> 
-    	<center><img src="images/mission-logo.png" class="img-responsive" alt=""/></center>
-    		<h3 class="body-header-3" style="padding-top: 5px;">Our Mission</h3>
-        	<p class="about-text-2"><br>
-				Florida Tech Formula Electric is a team established and run by students with a goal to develop a multi-disciplinary racing program at Florida Tech consisting of partnerships between SAE, IEEE, and the sustainability effort on campus. These partnerships help to prepare the next generation of industry leaders by providing students with oppurtunities to design, fabricate, and test a real world product. All of this is done while helping to promote and research the world sustainability effort.
-			</p>
-		</div>
-		<div class="about-half equalheight1"> 
-		<center><img src="images/team-pic.jpg" class="img-responsive" alt=""/></center>
-			<h3 class="body-header-3" style="padding-top: 5px;">Our Team</h3>
-			<p class="about-text-2"><br>
-				In order to handle the broad scope of this build, a mixture of mechanical, aerospace, electrical, and computer engineering students have come together to form a team. Mechanical and Aerospace Engineering students handle the design, construction, and structural analysis, while the Electrical Engineering students focus on power delivery and instrumentation. The Computer Engineering students program all the different controllers and interfaces as well as log sensor data for troubleshooting.
-				<!--In addition to these roles, some students have stepped into roles as managers and Systems Engineers to help organize the team and develop leadership skills.-->
-			</p>
-		</div>
-	</div>
-
-	<div class="body-header-accent"></div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-	<h2 class="w3-wide w3-center" style="color: #fff; padding-top: 65px; margin-top: 0;">TEAM HISTORY</h2>
-
-  <div id="timeline">
-    <ul id="dates">
-      <li><a href="#1998">1998</a></li>
-      <li><a href="#2004">2004</a></li>
-      <li><a href="#2006">2006</a></li>
-      <li><a href="#2007">2007</a></li>
-      <li><a href="#2008">2008</a></li>
-      <li><a href="#2009">2009</a></li>
-      <li><a href="#2010">2010</a></li>
-      <li><a href="#2013">2013</a></li>
-      <li><a href="#2017">2017</a></li>
-      <li><a href="#2018">2018</a></li>
-    </ul>
-
-    <ul id="issues" style="margin-bottom:0;">
-      <li id="1998">
-        <h1>1998</h1>
-        <p>Florida Tech Attends FSAE in Michigan</p>
-        <!--<br>
-        <p>Item 2</p>
-        -->
-      </li>
-      <li id="2004">
-        <h1>2004</h1>
-        <p>SAE Racing program put on hold</p>
-      </li>
-      <li id="2006">
-        <h1>2006</h1>
-        <p>Electric vehicle team is independently established</p>
-      </li>
-      <li id="2007">
-        <h1>2007</h1>
-        <p>An all electric vehicle developed by Florida Tech takes top honors at the newly established hybrid competition</p>
-      </li>
-      <li id="2008">
-        <h1>2008</h1>
-        <p>Electric team loses funding</p>
-      </li>
-      <li id="2009">
-        <h1>2009</h1>
-        <p>Focus Shifts to Internal Combustion</p>
-      </li>
-      <li id="2010">
-        <h1>2010</h1>
-        <p>Racing program faces closure</p>
-      </li>
-      <li id="2013">
-        <h1>2013</h1>
-        <p>Racing program is revived</p>
-      </li>
-      <li id="2017">
-        <h1>2017</h1>
-        <p>Electric Team is re-established</p>
-      </li>
-      <li id="2018">
-        <h1>2018</h1>
-        <p>SAE Competition in Lincon Nebraska</p>
-      </li>
-    </ul>
-    <div id="grad_left"></div>
-    <div id="grad_right"></div>
-    <a href="#"><img src="images/right-arrow.png" id="next" alt=""/></a>
-    <a href="#"><img src="images/left-arrow.png" id="prev" alt=""/></a>
-  </div>
-
-
-
-
-
-
-
-
-<div class="body-header-accent">
-           </div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-    <div class="about" id="about" name="about">
-    <!--<center><h2 class="body-header-2">
-              Organizations
-          </h2></center>-->
-          <h2 class="w3-wide w3-center" style="padding-top: 65px; margin-top: 0;">ORGANIZATIONS</h2>
-      <div class="about-half equalheight1">
-        <center>
-            <img src="images/sae-logo.png" class="img-responsive" alt=""/>
-          </center>
-
-
-          <p class="about-text-2"><br>
-          The Society of Automotive Engineers (SAE) is a U.S.-based, globally active professional association and standards developing organization for engineering professionals in various industries. Principal emphasis is placed on transport industries such as automotive, aerospace, and commercial vehicles. SAE International has more than 127,000 members globally. Membership is granted to individuals, not through companies. Aside from its standardization efforts, SAE International also devotes resources to projects and programs in STEM education, professional certification, and collegiate design competitions.
-
-
-          </p>
+          </a>
         </div>
-        <div class="about-half equalheight1">
-        <center>
-            <img src="images/ieee-logo.png" class="img-responsive" alt=""/>
-          </center>
-
-
-          <p class="about-text-2" style="margin-bottom: 60px;"><br>
-          The Institute of Electrical and Electronics Engineers (IEEE) is the
-          world's largest technical professional organization dedicated to advancing
-          technology for the benefit of humanity. IEEE serves technical
-          professionals and students who are looking to both foster working
-          relationships and gain access to the latest technical research and
-          knowledge.
-          Being a part of this huge organization gives members a huge advantage in their careers. The
-          vast IEEE network provides access to excellent guest speakers and allows access to valuable workshops 
-          that are not available outside this network.</p>
+        <div class="wrap-content">
+          <div class="social-icon">
+            <a href="https://www.facebook.com/FITFormulaElectric"><i class="icon"></i></a>
+            <a href="https://twitter.com"><i class="icon1"></i></a>
+            <a href="https://www.instagram.com"><i class="icon2"></i></a>
+            <a href="https://www.linkedin.com"><i class="icon3"></i></a>
+          </div>
+          <div class="profile-menu text-center">
+            <a class="menu-close button hvr-shutter-out-horizontal" href="#rules">Rules and Forms</a>
+            <a class="menu-close button hvr-shutter-out-horizontal stopscroll" href="#documents">2017 Documents</a>
+            <a class="menu-close button hvr-shutter-out-horizontal stopscroll" href="#reference">2007 Reference</a>
+            <a class="menu-close button hvr-shutter-out-horizontal stopscroll" href="#external">External Links</a>
+            <a class="menu-close button hvr-shutter-out-horizontal stopscroll" href="#newmember">New Member Survey</a>
+            <a class="menu-close button hvr-shutter-out-horizontal stopscroll" href="#checkin">Check In</a>
+          </div>
         </div>
       </div>
-    </div>
-<div class="body-header-accent">
-           </div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<div class="home" id="home" name="home">
+      <!--end of panel-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <div class="phone-box wrap push" id="home-top" name="home-top">
+        <!--****************************************************************************************************-->
+        <!--****************************************************************************************************-->
+        <!--****************************************************************************************************-->
+        <div class="efsae-header">
+          <div class="efsae-header-accent"></div>
+          <div class="efsae-header-background"></div>
+          <div class="efsae-header-left">
+            <!--SAE Logo-->
+          </div>
+          <div class="efsae-header-right"></div>
+        </div>
+        <!--end of efsae-header-->
+        <!--****************************************************************************************************-->
+        <!--****************************************************************************************************-->
+        <!--****************************************************************************************************-->
+        <div class="efsae-header-image-holder">
+          <div class="efsae-header-image"></div>
+        </div>
+        <!--****************************************************************************************************-->
+        <!--****************************************************************************************************-->
+        <!--****************************************************************************************************-->
+        <div id="sticky-anchor-2" class="sticky-anchor"></div>
+        <div id="sticky-anchor" class="sticky-anchor"></div>
+        <div id="sticky" class="stick">
+          <div class="navigation-menu-stuck">
+            <div class="navigation-menu">
+              <div class="menu-left">
+                <a class="menu-link" href="#menu"><i class="fa fa-navicon"></i></a>
+              </div>
+              <!--end of menu-left-->
+              <div class="menu-mid">
+                <a href="#home-top" style="display:block">
+                  <div class="button-1">
+                    <div class="nav-buttons">
+                      <p class="active">HOME</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#about-us" style="display:block">
+                  <div class="button-2">
+                    <div class="nav-buttons">
+                      <p class="passive">ABOUT US</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#events" style="display:block">
+                  <div class="button-3">
+                    <div class="nav-buttons">
+                      <p class="passive">CALENDAR</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#pictures" style="display:block">
+                  <div class="button-4">
+                    <div class="nav-buttons">
+                      <p class="passive">PICTURES</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#contact" style="display:block">
+                  <div class="button-5">
+                    <div class="nav-buttons">
+                      <p class="passive">CONTACT US</p>
+                    </div>
+                  </div>
+                </a>
+                <div class="wrapper-dropdown-2" id="dd0" tabindex="1">
+                  <div class="button-more" style="left:177px; width: 100px;">
+                    <div class="nav-buttons-more">
+                      <p class="passive">MORE &#9660;</p>
+                    </div>
+                  </div>
+                  <div id="dropdown-fixed" style="position:relative; top: 4px; width: 264px; left: 50%; margin-left: -128px; overflow:visible; z-index:95;">
+                    <div class="dropdown-holder">
+                      <ul class="dropdown" style=" top:45px; z-index:95;">
+                        <li style="font-size:22px">
+                          <center>
+                            <a href="#events">Calendar</a>
+                          </center>
+                        </li>
+                        <li style="font-size:22px">
+                          <center>
+                            <a href="#">Members</a>
+                          </center>
+                        </li>
+                        <li style="font-size:22px">
+                          <center>
+                            <a href="#events">Events</a>
+                          </center>
+                        </li>
+                        <li style="font-size:22px">
+                          <center>
+                            <a href="#">Contact Us</a>
+                          </center>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <script type="text/javascript">
+                    function DropDown(el) {
+                      this.dd = el;
+                      this.initEvents();
+                    }
+                    DropDown.prototype =
+                      {
+                        initEvents: function () {
+                          var obj = this;
+                          obj.dd.on('click', function (event) {
+                            $(this).toggleClass('active');
+                            event.stopPropagation();
+                          });
+                        }
+                      }
+                    $(function () {
+                      var dd = new DropDown($('#dd0'));
+                      $(document).click(function () {
+                        $('.wrapper-dropdown-2').removeClass('active');
+                      });
+                    });
+                  </script>
+                </div>
+                <div class="menu-accent" style="left: 61px;"></div>
+                <div class="menu-accent" style="left: 175px;"></div>
+                <div class="menu-accent-hiding" style="left: 295px;"></div>
+                <div class="menu-accent-hiding" style="left: 405px;"></div>
+              </div>
+              <!--end of menu-mid-->
+              <div class="menu-right">
+                <div class="wrapper-dropdown-2" id="dd3" tabindex="1">
+                  <div class="button-search">
+                    <div class="cd-main-header">
+                      <ul class="cd-header-buttons" style="margin-top:53px; margin-right:-30px">
+                        <li>
+                          <a class="cd-search-trigger" href="#cd-search"><span></span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--end of menu-right-->
+              <div class="menu-accent-bottom"></div>
+              <div class="cd-search" id="cd-search">
+                <form action="#" method="get">
+                  <input name="q" placeholder="Search..." type="text" />
+                  <input style="position: absolute; left: -9999px; width: 1px; height: 1px;" tabindex="-1" type="submit" />
+                </form>
+              </div>
+            </div>
+            <!--end of navigation-menu-->
+          </div>
+          <!--end of navigation-menu-stuck-->
+        </div>
+        <!--end of sticky-->
+        <!--****************************************************************************************************-->
+        <!--****************************************************************************************************-->
+        <!--****************************************************************************************************-->
+        <div class="ftfe-body-header"></div>
+        <div class="body-header-accent"></div>
+        <!--****************************************************************************************************-->
+        <!--****************************************************************************************************-->
+        <!--****************************************************************************************************-->
+        <div class="about-us" id="about-us" name="about-us" style="margin-left: 2%; margin-right: 2%;">
+          <h2 class="w3-wide w3-center" style="width: 96%; padding-top: 55px; margin-top: 0; margin-bottom: 35px;">ABOUT US</h2>
+          <div class="about" style="padding-bottom: 25px;">
+            <div class="about-half equalheight1">
+              <center><img src="images/mission-logo.png" class="img-responsive" alt="" /></center>
+              <h3 class="body-header-3" style="padding-top: 5px;">Our Mission</h3>
+              <p class="about-text-2"><br> Florida Tech Formula Electric is a team established and run by students with a goal to develop a multi-disciplinary
+                racing program at Florida Tech consisting of partnerships between SAE, IEEE, and the sustainability effort
+                on campus. These partnerships help to prepare the next generation of industry leaders by providing students
+                with oppurtunities to design, fabricate, and test a real world product. All of this is done while helping
+                to promote and research the world sustainability effort.
+              </p>
+            </div>
+            <div class="about-half equalheight1">
+              <center><img src="images/team-pic.jpg" class="img-responsive" alt="" /></center>
+              <h3 class="body-header-3" style="padding-top: 5px;">Our Team</h3>
+              <p class="about-text-2"><br> In order to handle the broad scope of this build, a mixture of mechanical, aerospace, electrical, and
+                computer engineering students have come together to form a team. Mechanical and Aerospace Engineering students
+                handle the design, construction, and structural analysis, while the Electrical Engineering students focus
+                on power delivery and instrumentation. The Computer Engineering students program all the different controllers
+                and interfaces as well as log sensor data for troubleshooting.
+                <!--In addition to these roles, some students have stepped into roles as managers and Systems Engineers to help organize the team and develop leadership skills.-->
+              </p>
+            </div>
+          </div>
+          <div class="body-header-accent"></div>
+          <!--****************************************************************************************************-->
+          <!--****************************************************************************************************-->
+          <!--****************************************************************************************************-->
+          <h2 class="w3-wide w3-center" style="color: #fff; padding-top: 65px; margin-top: 0;">TEAM HISTORY</h2>
+          <div id="timeline">
+            <ul id="dates">
+              <li><a href="#1998">1998</a></li>
+              <li><a href="#2004">2004</a></li>
+              <li><a href="#2006">2006</a></li>
+              <li><a href="#2007">2007</a></li>
+              <li><a href="#2008">2008</a></li>
+              <li><a href="#2009">2009</a></li>
+              <li><a href="#2010">2010</a></li>
+              <li><a href="#2013">2013</a></li>
+              <li><a href="#2017">2017</a></li>
+              <li><a href="#2018">2018</a></li>
+            </ul>
+            <ul id="issues" style="margin-bottom:0;">
+              <li id="1998">
+                <h1>1998</h1>
+                <p>Florida Tech Attends FSAE in Michigan</p>
+                <!--<br>
+        <p>Item 2</p>
+        -->
+              </li>
+              <li id="2004">
+                <h1>2004</h1>
+                <p>SAE Racing program put on hold</p>
+              </li>
+              <li id="2006">
+                <h1>2006</h1>
+                <p>Electric vehicle team is independently established</p>
+              </li>
+              <li id="2007">
+                <h1>2007</h1>
+                <p>An all electric vehicle developed by Florida Tech takes top honors at the newly established hybrid competition</p>
+              </li>
+              <li id="2008">
+                <h1>2008</h1>
+                <p>Electric team loses funding</p>
+              </li>
+              <li id="2009">
+                <h1>2009</h1>
+                <p>Focus Shifts to Internal Combustion</p>
+              </li>
+              <li id="2010">
+                <h1>2010</h1>
+                <p>Racing program faces closure</p>
+              </li>
+              <li id="2013">
+                <h1>2013</h1>
+                <p>Racing program is revived</p>
+              </li>
+              <li id="2017">
+                <h1>2017</h1>
+                <p>Electric Team is re-established</p>
+              </li>
+              <li id="2018">
+                <h1>2018</h1>
+                <p>SAE Competition in Lincon Nebraska</p>
+              </li>
+            </ul>
+            <div id="grad_left"></div>
+            <div id="grad_right"></div>
+            <a href="#"><img src="images/right-arrow.png" id="next" alt=""/></a>
+            <a href="#"><img src="images/left-arrow.png" id="prev" alt=""/></a>
+          </div>
+          <div class="body-header-accent">
+          </div>
+          <!--****************************************************************************************************-->
+          <!--****************************************************************************************************-->
+          <!--****************************************************************************************************-->
+          <div class="about" id="about" name="about">
+            <!--<center><h2 class="body-header-2">
+              Organizations
+          </h2></center>-->
+            <h2 class="w3-wide w3-center" style="padding-top: 65px; margin-top: 0;">ORGANIZATIONS</h2>
+            <div class="about-half equalheight1">
+              <center>
+                <img src="images/sae-logo.png" class="img-responsive" alt="" />
+              </center>
+              <p class="about-text-2"><br> The Society of Automotive Engineers (SAE) is a U.S.-based, globally active professional association and
+                standards developing organization for engineering professionals in various industries. Principal emphasis
+                is placed on transport industries such as automotive, aerospace, and commercial vehicles. SAE International
+                has more than 127,000 members globally. Membership is granted to individuals, not through companies. Aside
+                from its standardization efforts, SAE International also devotes resources to projects and programs in STEM
+                education, professional certification, and collegiate design competitions.
+              </p>
+            </div>
+            <div class="about-half equalheight1">
+              <center>
+                <img src="images/ieee-logo.png" class="img-responsive" alt="" />
+              </center>
+              <p class="about-text-2" style="margin-bottom: 60px;"><br> The Institute of Electrical and Electronics Engineers (IEEE) is the world's largest technical professional
+                organization dedicated to advancing technology for the benefit of humanity. IEEE serves technical professionals
+                and students who are looking to both foster working relationships and gain access to the latest technical
+                research and knowledge. Being a part of this huge organization gives members a huge advantage in their careers.
+                The vast IEEE network provides access to excellent guest speakers and allows access to valuable workshops
+                that are not available outside this network.</p>
+            </div>
+          </div>
+        </div>
+        <div class="body-header-accent"></div>
+        <!--****************************************************************************************************-->
+        <!--****************************************************************************************************-->
+        <!--****************************************************************************************************-->
+        <div class="home" id="home" name="home">
           <!--<center><h2 class="body-header-2">
               The Florida Tech SAE Family
           </h2></center>-->
           <h2 class="w3-wide w3-center" style="padding-top: 65px; margin-top: 0; padding-bottom: 40px;">FLORIDA TECH RACING</h2>
           <div class="col-md-4 home-grid">
-            <img src="images/fit-electric.jpg" class="img-responsive center-image" alt=""/>
-            <a href="#" class="header-link"> 
+            <img src="images/fit-electric.jpg" class="img-responsive center-image" alt="" />
+            <a href="#" class="header-link">
               <h3 class="body-header-3">
                 Formula Electric
               </h3>
             </a>
             <p class="about-text">
-                In 2012, SAE International announced a new addition to their Formula SAE Competition series: Formula SAE Electric. In this competition, student design teams must design, build and race a small formula-style race car for a fictional manufacturing company. Each teams final design will compete in a series of events and be evaluated for its potential as a production item. For the electric competition, entries must utilize a fully-electric powertrain with a maximum power output of 80 kW.
+              In 2012, SAE International announced a new addition to their Formula SAE Competition series: Formula SAE Electric. In this
+              competition, student design teams must design, build and race a small formula-style race car for a fictional
+              manufacturing company. Each teams final design will compete in a series of events and be evaluated for its
+              potential as a production item. For the electric competition, entries must utilize a fully-electric powertrain
+              with a maximum power output of 80 kW.
             </p>
-            
-          </div> 
+          </div>
           <div class="col-md-4 home-grid">
-            <img src="images/fit-formula.jpg" class="img-responsive center-image" alt=""/>
-            <a href="https://sites.google.com/a/fitmotorsports.net/default/Home" class="header-link"> 
+            <img src="images/fit-formula.jpg" class="img-responsive center-image" alt="" />
+            <a href="https://sites.google.com/a/fitmotorsports.net/default/Home" class="header-link">
               <h3 class="body-header-3">
-                  Formula SAE
+                Formula SAE
               </h3>
-            </a>           
+            </a>
             <p class="about-text">
-                The concept behind Formula SAE is that a fictional manufacturing company has contracted a design team to develop a small Formula-style race car. The prototype race car is to be evaluated for its potential as a production item. The target marketing group for the race car is the non-professional weekend autocross racer. Each student team designs, builds and tests a prototype based on a series of rules whose purpose is both to ensure onsite event operations and promote clever problem solving.
+              The concept behind Formula SAE is that a fictional manufacturing company has contracted a design team to develop a small
+              Formula-style race car. The prototype race car is to be evaluated for its potential as a production item. The
+              target marketing group for the race car is the non-professional weekend autocross racer. Each student team
+              designs, builds and tests a prototype based on a series of rules whose purpose is both to ensure onsite event
+              operations and promote clever problem solving.
             </p>
-            
-          </div> 
+          </div>
           <div class="col-md-4 home-grid">
-            <img src="images/fit-baja.jpg" class="img-responsive center-image" alt=""/>
+            <img src="images/fit-baja.jpg" class="img-responsive center-image" alt="" />
             <a href="http://projects.fit.edu/baja/" class="header-link">
               <h3 class="body-header-3">
                 SAE Baja Design
               </h3>
-            </a>          
+            </a>
             <p class="about-text">
-                The goal of the Baja Design team is to design and build an off-road vehicle that will survive the severe punishment of rough terrain, and in some occasions even water. The Baja SAE Design Competition simulates real-world engineering design projects along with the challenges engineers may face when working on such projects. It will require the application of a variety of engineering principles, and allows students to apply their education to a hands-on project.
+              The goal of the Baja Design team is to design and build an off-road vehicle that will survive the severe punishment of rough
+              terrain, and in some occasions even water. The Baja SAE Design Competition simulates real-world engineering
+              design projects along with the challenges engineers may face when working on such projects. It will require
+              the application of a variety of engineering principles, and allows students to apply their education to a hands-on
+              project.
             </p>
-           
-          </div> 
-</div>
-
-<div class="body-header-accent">
-           </div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<div class="events" id="events" name="events">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:1500px; margin-left: 3%; margin-right: 3%;">
-      <h2 class="w3-wide w3-center">UPCOMING EVENTS</h2>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div id='calendar'></div>
-
-
-
-
-
-
-
-
-
-      <!--
+          </div>
+        </div>
+        <div class="body-header-accent"></div>
+        <!--****************************************************************************************************-->
+        <!--****************************************************************************************************-->
+        <!--****************************************************************************************************-->
+        <div class="events" id="events" name="events">
+          <div class="w3-container w3-content w3-padding-64" style="max-width:1500px; margin-left: 3%; margin-right: 3%;">
+            <h2 class="w3-wide w3-center">UPCOMING EVENTS</h2>
+            <div id='calendar'></div>
+            <!--
       <ul class="w3-ul w3-border w3-white w3-text-grey">
         <li class="w3-padding">August <span class="w3-badge w3-right w3-margin-right">2</span></li>
         <li class="w3-padding">September <span class="w3-badge w3-right w3-margin-right">3</span></li>
@@ -637,8 +586,8 @@
           </div>
         </div>
         -->
-        <!--ADD AFTER ORGFAIR REMOVED-->
-      	<!--
+            <!--ADD AFTER ORGFAIR REMOVED-->
+            <!--
 		<div class="w3-third w3-margin-bottom">
           <img src="images/general-meeting.jpg" alt="General Meeting" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white" style="margin-top: 5px;">
@@ -649,8 +598,8 @@
           </div>
         </div>
       	-->
-      	<!--ADD AFTER INTRO MEETING REMOVED-->
-      	<!--
+            <!--ADD AFTER INTRO MEETING REMOVED-->
+            <!--
 		<div class="w3-third w3-margin-bottom">
           <img src="images/ev-meetup.jpg" alt="EV Meetup" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white" style="margin-top: 5px;">
@@ -661,17 +610,17 @@
           </div>
         </div>
       	-->
+          </div>
+        </div>
       </div>
-    </div>
-</div>
-<div class="body-header-accent"></div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<div class="pictures" id="pictures" name="pictures">
-    <h2 class="w3-wide w3-center">PICTURES</h2>
+      <div class="body-header-accent"></div>
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <div class="pictures" id="pictures" name="pictures">
+        <h2 class="w3-wide w3-center">PICTURES</h2>
 
-<!--
+        <!--
     <div class="gallery-selector">
 		<a class="gallery-button hvr-shutter-out-horizontal" href="#gallery-1">Gallery 1</a>
 		<a class="gallery-button hvr-shutter-out-horizontal" href="#gallery-2">Gallery 2</a>
@@ -679,390 +628,375 @@
 	</div>
 -->
 
-<!--Images must be 600 by 400-->
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="images/gallery-orgfair-1.jpg">
-      <img src="images/gallery-orgfair-1.jpg" alt="Gallery Image 1" width="600" height="400">
-    </a>
-    <div class="desc">2017 Organization Fair</div>
-  </div>
-</div>
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="images/gallery-orgfair-2.jpg">
-      <img src="images/gallery-orgfair-2.jpg" alt="Gallery Image 2" width="600" height="400">
-    </a>
-    <div class="desc">2017 Organization Fair</div>
-  </div>
-</div>
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="images/gallery-team-pic.jpg">
-      <img src="images/gallery-team-pic.jpg" alt="Gallery Image 3" width="600" height="400">
-    </a>
-    <div class="desc">2017 OrgFair Team</div>
-  </div>
-</div>
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="images/gallery-meeting-1.jpg">
-      <img src="images/gallery-meeting-1.jpg" alt="Gallery Image 4" width="600" height="400">
-    </a>
-    <div class="desc">Summer Meeting</div>
-  </div>
-</div>
+        <!--Images must be 600 by 400-->
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="images/gallery-orgfair-1.jpg"><img src="images/gallery-orgfair-1.jpg" alt="Gallery Image 1" width="600" height="400"></a>
+            <div class="desc">2017 Organization Fair</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="images/gallery-orgfair-2.jpg"><img src="images/gallery-orgfair-2.jpg" alt="Gallery Image 2" width="600" height="400"></a>
+            <div class="desc">2017 Organization Fair</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="images/gallery-team-pic.jpg"><img src="images/gallery-team-pic.jpg" alt="Gallery Image 3" width="600" height="400"></a>
+            <div class="desc">2017 OrgFair Team</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="images/gallery-meeting-1.jpg"><img src="images/gallery-meeting-1.jpg" alt="Gallery Image 4" width="600" height="400"></a>
+            <div class="desc">Summer Meeting</div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="body-header-accent"></div>
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <div class="contact" id="contact" style="padding-bottom: 4em; padding-top: 3em;">
+        <div class="container">
+          <script>
+                    function postToGoogle2() {
+                      var field1 = $('#firstName').val();
+                      var field2 = $('#lastName').val();
+                      var field3 = $('#email').val();
+                      var field4 = $('#number').val();
+                      var field5 = $('#message').val();
 
-<div class="clearfix"></div>
+                      $.ajax({
+                        url: "https://docs.google.com/forms/d/e/1FAIpQLSeK2MtTY7Oj5ijFRQEBjjQ3a7V5qlzZMWGNlJsnzBJeTawkIw/formResponse",
+                        data: {
+                          "entry.1114539075": field1,
+                          "entry.429219511": field2,
+                          "entry.1973346511": field3,
+                          "entry.912526124": field4,
+                          "entry.608237595": field5
+                        },
+                        type: "POST",
+                        dataType: "xml",
+                        statusCode: {
+                          0: function () {
 
+                          },
+                          200: function () {
 
-
-
-
-</div>
-<div class="body-header-accent"></div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<div class="contact" id="contact" style="padding-bottom: 4em; padding-top: 3em;">
-    <div class="container">
-    <script>
-      function postToGoogle2() {
-      var field1 = $('#firstName').val();
-      var field2 = $('#lastName').val();
-      var field3 = $('#email').val();
-      var field4 = $('#number').val();
-      var field5 = $('#message').val();
-
-      $.ajax({
-        url: "https://docs.google.com/forms/d/e/1FAIpQLSeK2MtTY7Oj5ijFRQEBjjQ3a7V5qlzZMWGNlJsnzBJeTawkIw/formResponse",
-          data: {
-            "entry.1114539075": field1,
-            "entry.429219511": field2,
-            "entry.1973346511": field3,
-            "entry.912526124": field4,
-            "entry.608237595": field5
-          },
-          type: "POST",
-          dataType: "xml",
-          statusCode: {
-            0: function() {
-              
-            },
-            200: function() {
-              
+                          }
+                        }
+                      });
+                      $("#form2")[0].reset();
+                    }
+          </script>
+          <script>
+            function validateForm2() {
+              var x = document.forms["form2"]["email"].value;
+              var y = $('#email').val();
+              if (x == "") {
+                return false;
+              }
+              else {
+                window.location.href = '#';
+                alert("Success!");
+                return true;
+              }
             }
-          }
-        });
-      $("#form2")[0].reset();
-      }
-    </script>
-    <script>
-      function validateForm2() {
-        var x = document.forms["form2"]["email"].value;
-        var y = $('#email').val();
-          if (x == "") {
-            return false;
-          }
-          else {
-            window.location.href = '#';
-            alert("Success!");
-            return true;
-          }
-      }
-    </script>
-		<h2 class="w3-wide w3-center">CONTACT US</h2>
-            <div class="contact-grids">
-              <div class="col-md-5 address">
-                <h4 id="contact-info">Contact Info</h4>
-                <div class="address-row">
-                  <div class="col-md-2 address-left contact-us-glyph">
-                    <span aria-hidden="true" class="glyphicon glyphicon-home contact-us-glyph"></span>
-                  </div>
-                  <div class="col-md-10 address-right">
-                    <h5 class="contact-us">Location</h5>
-                    <p class="contact-us">150 W University Blvd, Melbourne, FL 32901</p>
-                  </div>
+          </script>
+          <h2 class="w3-wide w3-center">CONTACT US</h2>
+          <div class="contact-grids">
+            <div class="col-md-5 address">
+              <h4 id="contact-info">Contact Info</h4>
+              <div class="address-row">
+                <div class="col-md-2 address-left contact-us-glyph">
+                  <span aria-hidden="true" class="glyphicon glyphicon-home contact-us-glyph"></span>
                 </div>
-                <div class="address-row">
-                  <div class="col-md-2 address-left contact-us-glyph">
-                    <span aria-hidden="true" class="glyphicon glyphicon-envelope contact-us-glyph"></span>
-                  </div>
-                  <div class="col-md-10 address-right">
-                    <h5 class="contact-us">Email</h5>
-                    <p class="contact-us"><a href="mailto:atassinari2014@my.fit.edu">atassinari2014@my.fit.edu</a></p>
-                  </div>
-                </div>
-                <div class="address-row">
-                  <div class="col-md-2 address-left contact-us-glyph">
-                    <span aria-hidden="true" class="glyphicon glyphicon-phone contact-us-glyph"></span>
-                  </div>
-                  <div class="col-md-10 address-right">
-                    <h5 class="contact-us">Phone</h5>
-                    <p class="contact-us">+1 (321) 555 4444</p>
-                  </div>
+                <div class="col-md-10 address-right">
+                  <h5 class="contact-us">Location</h5>
+                  <p class="contact-us">150 W University Blvd, Melbourne, FL 32901</p>
                 </div>
               </div>
-              <div id="mobile-divider" class="body-header-accent"></div>
-              <div class="col-md-7 contact-form">
-              	<h4 id="leave-message">Leave a Message</h4>
-                <form name="form2" id="form2" target="_self" onsubmit="return validateForm2();" action="javascript: postToGoogle2()">
-                  <input name="firstName" id="firstName" placeholder="First Name" required="" type="text"> 
-                  <input class="email" name="lastName" id ="lastName" placeholder="Last Name" required="" type="text"> 
-                  <input name="number" id="number" placeholder="Mobile Number" required="" type="text"> 
-                  <input class="email" name="email" id ="email" placeholder="Email" required="" type="text"> 
-                  <textarea name="message" id="message" placeholder="Message" required=""></textarea>
-                  <input type="submit" value="SUBMIT">
-                </form>
+              <div class="address-row">
+                <div class="col-md-2 address-left contact-us-glyph">
+                  <span aria-hidden="true" class="glyphicon glyphicon-envelope contact-us-glyph"></span>
+                </div>
+                <div class="col-md-10 address-right">
+                  <h5 class="contact-us">Email</h5>
+                  <p class="contact-us"><a href="mailto:atassinari2014@my.fit.edu">atassinari2014@my.fit.edu</a></p>
+                </div>
+              </div>
+              <div class="address-row">
+                <div class="col-md-2 address-left contact-us-glyph">
+                  <span aria-hidden="true" class="glyphicon glyphicon-phone contact-us-glyph"></span>
+                </div>
+                <div class="col-md-10 address-right">
+                  <h5 class="contact-us">Phone</h5>
+                  <p class="contact-us">+1 (321) 555 4444</p>
+                </div>
               </div>
             </div>
-    </div>
-</div>
-
-
-
-
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<div class="footer" id ="footer">
-	<div class="menu-accent-top">
-    </div>
-    <div class="footer-content" id="footer-content">
-
-
-
-    	<div class="left-footer-image-holder">
-    		<!--<img src="images/ieee-white.png" alt="IEEE">-->
-    	</div>
-    	<div class="center-footer-image-holder">
-
-    	</div>
-    	<div class="right-footer-image-holder">
-    		<!--<img src="images/sae-white.png" alt="SAE">-->
-    	</div>
-
-
-    </div>
-</div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<div class="overlay" id="checkin" name="checkin">
-<div class="popup">
-<div id="contact-form">
-    <script>
-      function postToGoogle() {
-      var field1 = $('#subject').val();
-      var field2 = $('#feed').val();
-      var field3 = $('#feed2').val();
-
-      $.ajax({
-        url: "https://docs.google.com/forms/d/e/1FAIpQLSdmKRNAPPTkAcy4iYHaEeG1T5J5vKU9eCHZimn9sEUY8RxeEQ/formResponse",
-          data: {
-            "entry.1923829317": field1,
-            "entry.766132253": field2,
-            "entry.1060894567":field3
-          },
-          type: "POST",
-          dataType: "xml",
-          statusCode: {
-            0: function() {
-              
-            },
-            200: function() {
-              
-            }
-          }
-        });
-      }
-    </script>
-    <script>
-      function validateForm() {
-        var x = document.forms["form"]["feed"].value;
-        var y = $('#subject').val();
-          if (x == "") {
-            return false;
-          }
-          else {
-            document.getElementById( "checkin" ).style.visibility = "hidden" ;
-            window.location.href = '#';
-            alert("Success!");
-            if (y == "Yes")
-            {
-              /*window.open('google.com','_blank');*/
-              window.location.href = '#newmember';
-              $('body').css('overflow', 'hidden');
-            }
-            return true;
-          }
-      }
-    </script>
-  <div>
-  <a class="close resumescroll" href="#">&times;</a>
-    <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">Sign in</h1> 
-  </div>
-       <form id="form" name="form" target="_self" onsubmit="return validateForm()" action="javascript: postToGoogle()">
-      <div>
-          <label for="name">
-            <span class="required">Name: *</span> 
-            <input type="text" id="feed" name="feed" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
-          </label> 
+            <div id="mobile-divider" class="body-header-accent"></div>
+            <div class="col-md-7 contact-form">
+              <h4 id="leave-message">Leave a Message</h4>
+              <form name="form2" id="form2" target="_self" onsubmit="return validateForm2();" action="javascript: postToGoogle2()">
+                <input name="firstName" id="firstName" placeholder="First Name" required="" type="text">
+                <input class="email" name="lastName" id="lastName" placeholder="Last Name" required="" type="text">
+                <input name="number" id="number" placeholder="Mobile Number" required="" type="text">
+                <input class="email" name="email" id="email" placeholder="Email" required="" type="text">
+                <textarea name="message" id="message" placeholder="Message" required=""></textarea>
+                <input type="submit" value="SUBMIT">
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-          <label for="email">
-            <span class="required">FIT Email: *</span>
-            <input type="email" id="feed2" name="feed2" value="" placeholder="Your Email" tabindex="2" required="required" />
-          </label>  
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <div class="footer" id="footer">
+        <div class="menu-accent-top">
+        </div>
+        <div class="footer-content" id="footer-content">
+          <div class="left-footer-image-holder">
+            <!--<img src="images/ieee-white.png" alt="IEEE">-->
+          </div>
+          <div class="center-footer-image-holder">
+          </div>
+          <div class="right-footer-image-holder">
+            <!--<img src="images/sae-white.png" alt="SAE">-->
+          </div>
+        </div>
       </div>
-      <div>             
-          <label for="subject">
-          <span class="required">First time attending EFSAE?</span>
-            <select id="subject" name="subject" tabindex="4" required> 
-               <option id="qs1_op_1" name="qs1" value="--">--</option>
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <div class="overlay" id="checkin" name="checkin">
+        <div class="popup">
+          <div id="contact-form">
+            <script>
+              function postToGoogle() {
+                var field1 = $('#subject').val();
+                var field2 = $('#feed').val();
+                var field3 = $('#feed2').val();
+
+                $.ajax({
+                  url: "https://docs.google.com/forms/d/e/1FAIpQLSdmKRNAPPTkAcy4iYHaEeG1T5J5vKU9eCHZimn9sEUY8RxeEQ/formResponse",
+                  data: {
+                    "entry.1923829317": field1,
+                    "entry.766132253": field2,
+                    "entry.1060894567": field3
+                  },
+                  type: "POST",
+                  dataType: "xml",
+                  statusCode: {
+                    0: function () {
+
+                    },
+                    200: function () {
+
+                    }
+                  }
+                });
+              }
+            </script>
+            <script>
+              function validateForm() {
+                var x = document.forms["form"]["feed"].value;
+                var y = $('#subject').val();
+                if (x == "") {
+                  return false;
+                }
+                else {
+                  document.getElementById("checkin").style.visibility = "hidden";
+                  window.location.href = '#';
+                  alert("Success!");
+                  if (y == "Yes") {
+                    /*window.open('google.com','_blank');*/
+                    window.location.href = '#newmember';
+                    $('body').css('overflow', 'hidden');
+                  }
+                  return true;
+                }
+              }
+            </script>
+            <div>
+              <a class="close resumescroll" href="#">&times;</a>
+              <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">Sign in</h1>
+            </div>
+            <form id="form" name="form" target="_self" onsubmit="return validateForm()" action="javascript: postToGoogle()">
+              <div>
+                <label for="name" class="required">Name: *</label>
+                <input type="text" id="feed" name="feed" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus"
+                />
+              </div>
+              <div>
+                <label for="email" class="required">FIT Email: *</label>
+                <input type="email" id="feed2" name="feed2" value="" placeholder="Your Email" tabindex="2" required="required" />
+              </div>
+              <div>
+                <label for="subject" class="required">First time attending EFSAE?</label>
+                <select id="subject" name="subject" tabindex="4" required> 
+                <option disabled selected value="--">--</option>
                <option id="qs1_op_1" name="qs1" value="Yes">Yes</option>
                <option id="qs1_op_2" name="qs1" value="No">No</option>  
             </select>
-          </label>
-      </div>
-      <div>              
-          <button name="submit" class="submitbutton" type="submit" id="send">Submit</button> 
-      </div>
-      <!--<center><a href="https://docs.google.com/a/my.fit.edu/spreadsheets/d/1k8NKuD56ro2sqvXROD4pQ_N1zSkbRvNyEgvbProhjXM/edit?usp=sharing" style="text-decoration: none!important; margin-top: 8px;" target="_blank">View the List</a></center>-->
-      <center><a class="stopscroll" href="#attendance" style="text-decoration: none!important; margin-top: 8px;">View the List</a></center>
-      </form>
-       
-  </div>
-</div>
-</div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<div class="overlay" id="attendance" name="attendance">
-  <div class="popup">
-    <div id="spreadsheet-holder">
-      <div>
-        <a class="close resumescroll" href="#">&times;</a>
-        <center><h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">Check In List</h1></center>
-      </div>
-      <div class="spreadsheet-center">
-        <iframe src="https://docs.google.com/a/my.fit.edu/spreadsheets/d/e/2PACX-1vSI8m2y44n0smpP56mXcRmgeS3nfup3Vp5nK8cRw24gtZMnrDfmhhqhowvoXaAzOwuQz_LcWJifmgFR/pubhtml?widget=true&amp;headers=false" style="width: 100%;height: 100%;""></iframe>
-      </div>
-    </div>
-  </div>
-</div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<div class="overlay" id="newmember" name="newmember">
-  <div class="popup">
-    <div id="newmember-survey-holder">
-        <div>
-          <a class="close resumescroll" href="#">&times;</a>
-          <center><h1 style="color: #323232; margin-top: 7px; margin-bottom: 20px;">New Member</h1></center>
+              </div>
+              <div>
+                <button name="submit" class="submitbutton" type="submit" id="send">Submit</button>
+              </div>
+              <!--<center><a href="https://docs.google.com/a/my.fit.edu/spreadsheets/d/1k8NKuD56ro2sqvXROD4pQ_N1zSkbRvNyEgvbProhjXM/edit?usp=sharing" style="text-decoration: none!important; margin-top: 8px;" target="_blank">View the List</a></center>-->
+              <center><a class="stopscroll" href="#attendance" style="text-decoration: none!important; margin-top: 8px;">View the List</a></center>
+            </form>
+          </div>
         </div>
-        <div class="survey-popup-padding">
-        <div class="iframe-survey-holder">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf0cJgFxGOfH0URRllGqtKMwzhEbwMG7YGi2GY9f_4Wr_btVw/viewform?embedded=true" width="100%" height="95%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      </div>
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <div class="overlay" id="attendance" name="attendance">
+        <div class="popup">
+          <div id="spreadsheet-holder">
+            <div>
+              <a class="close resumescroll" href="#">&times;</a>
+              <center>
+                <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">Check In List</h1>
+              </center>
+            </div>
+            <div class="spreadsheet-center">
+              <iframe src="https://docs.google.com/a/my.fit.edu/spreadsheets/d/e/2PACX-1vSI8m2y44n0smpP56mXcRmgeS3nfup3Vp5nK8cRw24gtZMnrDfmhhqhowvoXaAzOwuQz_LcWJifmgFR/pubhtml?widget=true&amp;headers=false"
+                style="width: 100%;height: 100%;"></iframe>
+            </div>
+          </div>
         </div>
+      </div>
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <div class="overlay" id="newmember" name="newmember">
+        <div class="popup">
+          <div id="newmember-survey-holder">
+            <div>
+              <a class="close resumescroll" href="#">&times;</a>
+              <center>
+                <h1 style="color: #323232; margin-top: 7px; margin-bottom: 20px;">New Member</h1>
+              </center>
+            </div>
+            <div class="survey-popup-padding">
+              <div class="iframe-survey-holder">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf0cJgFxGOfH0URRllGqtKMwzhEbwMG7YGi2GY9f_4Wr_btVw/viewform?embedded=true"
+                  width="100%" height="95%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <div class="overlay" id="rules" name="rules">
+        <div class="popup">
+          <div id="documents-holder">
+            <div>
+              <a class="close resumescroll" href="#">&times;</a>
+              <center>
+                <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">Rules and Forms</h1>
+              </center>
+            </div>
+            <div class="about-half" style="text-align: center;">
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#">Document 1</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#">Document 2</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#">Document 3</a>
+            </div>
+            <div class="about-half" style="text-align: center;">
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#">Document 4</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#">Document 5</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#">Document 6</a>
+            </div>
+          </div>
         </div>
-  </div>
-</div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<div class="overlay" id="rules" name="rules">
-  <div class="popup">
-    <div id="documents-holder">
-      <div>
-        <a class="close resumescroll" href="#">&times;</a>
-        <center><h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">Rules and Forms</h1></center>
       </div>
-      <div class="about-half" style="text-align: center;">
-        <a class="menu-close button hvr-shutter-out-horizontal" href="#">Document 1</a>
-        <a class="menu-close button hvr-shutter-out-horizontal" href="#">Document 2</a>
-        <a class="menu-close button hvr-shutter-out-horizontal" href="#">Document 3</a>
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <div class="overlay" id="documents" name="documents">
+        <div class="popup">
+          <div id="documents-holder">
+            <div>
+              <a class="close resumescroll" href="#">&times;</a>
+              <center>
+                <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">Team Documents</h1>
+              </center>
+            </div>
+            <div class="about-half" style="text-align: center;">
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#breakdown">Team Breakdown</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#ieee-brief">IEEE Brief PowerPoint</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#intro-meeting">Intro Meeting PowerPoint</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#2017-sponsor-packet">Sponsorship Packet</a>
+            </div>
+            <div class="about-half" style="text-align: center;">
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#block-diagram-v1">Block Diagram V1</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#polo-design">Polo Design</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#meeting3">Meeting 3</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#meeting4">Meeting 4</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="about-half" style="text-align: center;">
-        <a class="menu-close button hvr-shutter-out-horizontal" href="#">Document 4</a>
-        <a class="menu-close button hvr-shutter-out-horizontal" href="#">Document 5</a>
-        <a class="menu-close button hvr-shutter-out-horizontal" href="#">Document 6</a>
-      </div>   
-    </div>
-  </div>
-</div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<div class="overlay" id="documents" name="documents">
-  <div class="popup">
-    <div id="documents-holder">
-      <div>
-        <a class="close resumescroll" href="#">&times;</a>
-        <center><h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">Team Documents</h1></center>
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <div class="overlay" id="block-diagram-v1" name="block-diagram-v1">
+        <div class="popup">
+          <div id="breakdown-holder">
+            <div>
+              <a class="close resumescroll" href="#">&times;</a>
+              <center>
+                <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">Block Diagram V1</h1>
+              </center>
+            </div>
+            <img src="images/block-diagram-v1.jpg" class="center-image" alt="" />
+          </div>
+        </div>
       </div>
-      <div class="about-half" style="text-align: center;">
-       	<a class="menu-close button hvr-shutter-out-horizontal" href="#breakdown">Team Breakdown</a>
-       	<a class="menu-close button hvr-shutter-out-horizontal" href="#ieee-brief">IEEE Brief PowerPoint</a>
-       	<a class="menu-close button hvr-shutter-out-horizontal" href="#intro-meeting">Intro Meeting PowerPoint</a>
-       	<a class="menu-close button hvr-shutter-out-horizontal" href="#2017-sponsor-packet">Sponsorship Packet</a>
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <div class="overlay" id="polo-design" name="polo-design">
+        <div class="popup">
+          <div id="breakdown-holder">
+            <div>
+              <a class="close resumescroll" href="#">&times;</a>
+              <center>
+                <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">Polo Design</h1>
+              </center>
+            </div>
+            <img src="images/shirt-design.png" class="center-image" alt="" />
+          </div>
+        </div>
       </div>
-      <div class="about-half" style="text-align: center;">
-       	<a class="menu-close button hvr-shutter-out-horizontal" href="#block-diagram-v1">Block Diagram V1</a>
-       	<a class="menu-close button hvr-shutter-out-horizontal" href="#polo-design">Polo Design</a>
-       	<a class="menu-close button hvr-shutter-out-horizontal" href="#meeting3">Meeting 3</a>
-       	<a class="menu-close button hvr-shutter-out-horizontal" href="#meeting4">Meeting 4</a>
-      </div>   
-    </div>
-  </div>
-</div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<div class="overlay" id="block-diagram-v1" name="block-diagram-v1">
-  <div class="popup">
-    <div id="breakdown-holder">
-      <div>
-        <a class="close resumescroll" href="#">&times;</a>
-        <center><h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">Block Diagram V1</h1></center>
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <div class="overlay" id="breakdown" name="breakdown">
+        <div class="popup">
+          <div id="breakdown-holder">
+            <div>
+              <a class="close resumescroll" href="#">&times;</a>
+              <center>
+                <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">Team Breakdown</h1>
+              </center>
+            </div>
+            <img src="images/breakdown.jpg" class="center-image" alt="" />
+          </div>
+        </div>
       </div>
-      <img src="images/block-diagram-v1.jpg" class="center-image" alt=""/>
-    </div>
-  </div>
-</div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<div class="overlay" id="polo-design" name="polo-design">
-  <div class="popup">
-    <div id="breakdown-holder">
-      <div>
-        <a class="close resumescroll" href="#">&times;</a>
-        <center><h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">Polo Design</h1></center>
-      </div>
-      <img src="images/shirt-design.png" class="center-image" alt=""/>
-    </div>
-  </div>
-</div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<div class="overlay" id="breakdown" name="breakdown">
-  <div class="popup">
-    <div id="breakdown-holder">
-      <div>
-        <a class="close resumescroll" href="#">&times;</a>
-        <center><h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">Team Breakdown</h1></center>
-      </div>
-      <img src="images/breakdown.jpg" class="center-image" alt=""/>
-    </div>
-  </div>
-</div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--<div class="overlay" id="ieee-brief" name="ieee-brief">
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--<div class="overlay" id="ieee-brief" name="ieee-brief">
   <div class="popup">
     <div id="ppt-holder">
       <div id="ppt-holder-inside">
@@ -1079,10 +1013,10 @@
       </div>
   </div>
 </div>-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--<div class="overlay" id="intro-meeting" name="intro-meeting">
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--<div class="overlay" id="intro-meeting" name="intro-meeting">
   <div class="popup">
     <div id="ppt-holder">
       <div id="ppt-holder-inside">
@@ -1100,48 +1034,42 @@
       </div>
   </div>
 </div>-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-
-
-
-
-
-
-
-
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<div class="overlay" id="reference" name="reference">
-  <div class="popup">
-    <div id="documents-holder">
-      <div>
-        <a class="close resumescroll" href="#">&times;</a>
-        <center><h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">2007 Documentation</h1></center>
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <div class="overlay" id="reference" name="reference">
+        <div class="popup">
+          <div id="documents-holder">
+            <div>
+              <a class="close resumescroll" href="#">&times;</a>
+              <center>
+                <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">2007 Documentation</h1>
+              </center>
+            </div>
+            <div class="about-half" style="text-align: center;">
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-pdr-ppt">2007-PDR.ppt </a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-fdr-ppt">2007-FDR.ppt</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-final-spec-ppt">2007 Final Specs</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-motor-spec">2007 Motor Spec</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-plc-spec">2007 PLC Spec</a>
+            </div>
+            <div class="about-half" style="text-align: center;">
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-pdr-doc">2007-PDR.doc</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-fdr-doc">2007-FDR.doc</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-sponsorship-doc">2007-SP.doc</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-battery-spec">2007 Battery Spec</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-motor-controller-spec">2007 Controller Spec</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="about-half" style="text-align: center;">
-        <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-pdr-ppt">2007-PDR.ppt </a>
-        <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-fdr-ppt">2007-FDR.ppt</a>
-        <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-final-spec-ppt">2007 Final Specs</a>
-        <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-motor-spec">2007 Motor Spec</a>
-        <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-plc-spec">2007 PLC Spec</a>
-      </div>
-      <div class="about-half" style="text-align: center;">
-        <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-pdr-doc">2007-PDR.doc</a>
-        <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-fdr-doc">2007-FDR.doc</a>
-        <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-sponsorship-doc">2007-SP.doc</a>
-        <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-battery-spec">2007 Battery Spec</a>
-        <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-motor-controller-spec">2007 Controller Spec</a>
-      </div>   
-    </div>
-  </div>
-</div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--<div class="overlay" id="2007-fdr-ppt" name="2007-fdr-ppt">
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--<div class="overlay" id="2007-fdr-ppt" name="2007-fdr-ppt">
   <div class="popup">
     <div id="ppt-holder">
       <div id="ppt-holder-inside">
@@ -1159,10 +1087,10 @@
       </div>
   </div>
 </div>-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--<div class="overlay" id="2007-pdr-ppt" name="2007-pdr-ppt">
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--<div class="overlay" id="2007-pdr-ppt" name="2007-pdr-ppt">
   <div class="popup">
     <div id="ppt-holder">
       <div id="ppt-holder-inside">
@@ -1180,10 +1108,10 @@
       </div>
   </div>
 </div>-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--<div class="overlay" id="2007-fdr-doc" name="2007-fdr-doc">
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--<div class="overlay" id="2007-fdr-doc" name="2007-fdr-doc">
   <div class="popup">
     <div class="document-holder">
         <div>
@@ -1199,10 +1127,10 @@
       </div>
   </div>
 </div>-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--<div class="overlay" id="2007-pdr-doc" name="2007-pdr-doc">
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--<div class="overlay" id="2007-pdr-doc" name="2007-pdr-doc">
  <div class="popup">
   <div class="document-holder">
         <div>
@@ -1218,10 +1146,10 @@
     </div>
   </div>
 </div>-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--<div class="overlay" id="2007-sponsorship-doc" name="2007-sponsorship-doc">
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--<div class="overlay" id="2007-sponsorship-doc" name="2007-sponsorship-doc">
  <div class="popup">
   <div class="document-holder">
         <div>
@@ -1237,10 +1165,10 @@
     </div>
   </div>
 </div>-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--<div class="overlay" id="2007-final-spec-ppt" name="2007-final-spec-ppt">
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--<div class="overlay" id="2007-final-spec-ppt" name="2007-final-spec-ppt">
   <div class="popup">
     <div id="ppt-holder">
       <div id="ppt-holder-inside">
@@ -1258,124 +1186,114 @@
       </div>
   </div>
 </div>-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<div class="overlay" id="2007-motor-spec" name="2007-motor-spec">
-  <div class="popup">
-    <div class="pdf-holder">
-        <div>
-          <a class="close resumescroll" href="#">&times;</a>
-          <center><h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">2007 Motor Spec</h1></center>
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <div class="overlay" id="2007-motor-spec" name="2007-motor-spec">
+        <div class="popup">
+          <div class="pdf-holder">
+            <div>
+              <a class="close resumescroll" href="#">&times;</a>
+              <center>
+                <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">2007 Motor Spec</h1>
+              </center>
+            </div>
+            <iframe src="https://drive.google.com/file/d/0B9mrb76GiViaamItS1FTZzRCYzQ/preview" width="100%" height="85%"></iframe>
+          </div>
+          <center><a href="docs/warp-9-motor-spec.pdf" style="text-decoration: none!important; margin-bottom: 23px; position: absolute; bottom: 0; font-size: 22px; color: #fff; left: 0; right: 0;">View as PDF</a>
+          </center>
         </div>
-
-          <iframe src="https://drive.google.com/file/d/0B9mrb76GiViaamItS1FTZzRCYzQ/preview" width="100%" height="85%"></iframe>
-
       </div>
-      
-        <center><a href="docs/warp-9-motor-spec.pdf" style="text-decoration: none!important; margin-bottom: 23px; position: absolute; bottom: 0; font-size: 22px; color: #fff; left: 0; right: 0;">View as PDF</a>
-        </center>
-  </div>
-</div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<div class="overlay" id="2007-plc-spec" name="2007-plc-spec">
-  <div class="popup">
-    <div class="pdf-holder">
-        <div>
-          <a class="close resumescroll" href="#">&times;</a>
-          <center><h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">2007 PLC Spec</h1></center>
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <div class="overlay" id="2007-plc-spec" name="2007-plc-spec">
+        <div class="popup">
+          <div class="pdf-holder">
+            <div>
+              <a class="close resumescroll" href="#">&times;</a>
+              <center>
+                <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">2007 PLC Spec</h1>
+              </center>
+            </div>
+            <iframe src="https://drive.google.com/file/d/0B9mrb76GiViaazZUZC1XNlhJZ2c/preview" width="100%" height="85%"></iframe>
+          </div>
+          <center><a href="docs/ezplc-controller-spec.pdf" style="text-decoration: none!important; margin-bottom: 23px; position: absolute; bottom: 0; font-size: 22px; color: #fff; left: 0; right: 0;">View as PDF</a>
+          </center>
         </div>
-
-          <iframe src="https://drive.google.com/file/d/0B9mrb76GiViaazZUZC1XNlhJZ2c/preview" width="100%" height="85%"></iframe>
       </div>
-      
-        <center><a href="docs/ezplc-controller-spec.pdf" style="text-decoration: none!important; margin-bottom: 23px; position: absolute; bottom: 0; font-size: 22px; color: #fff; left: 0; right: 0;">View as PDF</a>
-        </center>
-  </div>
-</div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<div class="overlay" id="2007-battery-spec" name="2007-battery-spec">
-  <div class="popup">
-    <div class="pdf-holder">
-        <div>
-          <a class="close resumescroll" href="#">&times;</a>
-          <center><h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">2007 Battery Spec</h1></center>
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <div class="overlay" id="2007-battery-spec" name="2007-battery-spec">
+        <div class="popup">
+          <div class="pdf-holder">
+            <div>
+              <a class="close resumescroll" href="#">&times;</a>
+              <center>
+                <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">2007 Battery Spec</h1>
+              </center>
+            </div>
+            <iframe src="https://drive.google.com/file/d/0B9mrb76GiViaeTM5UTVHODZVbFk/preview" width="100%" height="85%"></iframe>
+          </div>
+          <center><a href="docs/ANR26650M1-battery-spec.pdf" style="text-decoration: none!important; margin-bottom: 23px; position: absolute; bottom: 0; font-size: 22px; color: #fff; left: 0; right: 0;">View as PDF</a>
+          </center>
         </div>
-
-          <iframe src="https://drive.google.com/file/d/0B9mrb76GiViaeTM5UTVHODZVbFk/preview" width="100%" height="85%"></iframe>
       </div>
-      
-        <center><a href="docs/ANR26650M1-battery-spec.pdf" style="text-decoration: none!important; margin-bottom: 23px; position: absolute; bottom: 0; font-size: 22px; color: #fff; left: 0; right: 0;">View as PDF</a>
-        </center>
-  </div>
-</div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<div class="overlay" id="2007-motor-controller-spec" name="2007-motor-controller-spec">
-  <div class="popup">
-    <div class="pdf-holder">
-        <div>
-          <a class="close resumescroll" href="#">&times;</a>
-          <center><h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">2007 Controller Spec</h1></center>
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <div class="overlay" id="2007-motor-controller-spec" name="2007-motor-controller-spec">
+        <div class="popup">
+          <div class="pdf-holder">
+            <div>
+              <a class="close resumescroll" href="#">&times;</a>
+              <center>
+                <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">2007 Controller Spec</h1>
+              </center>
+            </div>
+            <iframe src="https://drive.google.com/file/d/0B9mrb76GiViacEJyZlE3ZzdFdDA/preview" width="100%" height="85%"></iframe>
+          </div>
+          <center><a href="docs/zilla-motor-controller-manual.pdf" style="text-decoration: none!important; margin-bottom: 23px; position: absolute; bottom: 0; font-size: 22px; color: #fff; left: 0; right: 0;">View as PDF</a>
+          </center>
         </div>
-
-          <iframe src="https://drive.google.com/file/d/0B9mrb76GiViacEJyZlE3ZzdFdDA/preview" width="100%" height="85%"></iframe>
       </div>
-      
-        <center><a href="docs/zilla-motor-controller-manual.pdf" style="text-decoration: none!important; margin-bottom: 23px; position: absolute; bottom: 0; font-size: 22px; color: #fff; left: 0; right: 0;">View as PDF</a>
-        </center>
-  </div>
-</div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<div class="overlay" id="external" name="external">
-  <div class="popup">
-    <div id="documents-holder">
-      <div>
-        <a class="close resumescroll" href="#">&times;</a>
-        <center><h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">External Links</h1></center>
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <div class="overlay" id="external" name="external">
+        <div class="popup">
+          <div id="documents-holder">
+            <div>
+              <a class="close resumescroll" href="#">&times;</a>
+              <center>
+                <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">External Links</h1>
+              </center>
+            </div>
+            <div class="about-half" style="text-align: center;">
+              <a class="menu-close button hvr-shutter-out-horizontal" href="facebook.com/FITFormulaElectric">Facebook Page</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="https://drive.google.com/open?id=0B5W635TNvpRzSEpNaVQ1NDZWaWM">Google Drive</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#">Link</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#">Link</a>
+            </div>
+            <div class="about-half" style="text-align: center;">
+              <a class="menu-close button hvr-shutter-out-horizontal" href="https://www.facebook.com/groups/1896368480629583">Facebook Group</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="http://www.formula-hybrid.org/about/history/2007-formula-hybrid-competition/">2007 Hybrid Results</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#">Link</a>
+              <a class="menu-close button hvr-shutter-out-horizontal" href="#">Link</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="about-half" style="text-align: center;">
-       	<a class="menu-close button hvr-shutter-out-horizontal" href="facebook.com/FITFormulaElectric">Facebook Page</a>
-       	<a class="menu-close button hvr-shutter-out-horizontal" href="https://drive.google.com/open?id=0B5W635TNvpRzSEpNaVQ1NDZWaWM">Google Drive</a>
-       	<a class="menu-close button hvr-shutter-out-horizontal" href="#">Link</a>
-       	<a class="menu-close button hvr-shutter-out-horizontal" href="#">Link</a>
-      </div>
-      <div class="about-half" style="text-align: center;">
-       	<a class="menu-close button hvr-shutter-out-horizontal" href="https://www.facebook.com/groups/1896368480629583">Facebook Group</a>
-       	<a class="menu-close button hvr-shutter-out-horizontal" href="http://www.formula-hybrid.org/about/history/2007-formula-hybrid-competition/">2007 Hybrid Results</a>
-       	<a class="menu-close button hvr-shutter-out-horizontal" href="#">Link</a>
-       	<a class="menu-close button hvr-shutter-out-horizontal" href="#">Link</a>
-      </div>   
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
+      <!--****************************************************************************************************-->
     </div>
+    <!--end of phone-box wrap push-->
   </div>
-</div>
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-<!--****************************************************************************************************-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          </div><!--end of phone-box wrap push-->
-    </div><!-- end of masthead pdng-stn1-->
-  </div><!--end of body-back-->
+  <!-- end of masthead pdng-stn1-->
+  </div>
+  <!--end of body-back-->
   <script src="js/search.js"></script>
   <script src="js/scripts.js"></script>
 </body>
