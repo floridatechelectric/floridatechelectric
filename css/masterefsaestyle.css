@@ -1688,6 +1688,7 @@ div.desc {
 */
 /*popup*/
 .overlay {
+  z-index: 100;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -1739,7 +1740,7 @@ h4{
    float: left;
    left: 50%;
    position: absolute;
-   margin-top:30px;
+   margin-top: 10vw;
    margin-left: -150.5px;
    border-radius:7px;
    -webkit-border-radius:7px;
@@ -1820,6 +1821,7 @@ input:required, textarea:required {
       margin-right: auto;
       width: 88%;
       margin-left: auto;
+      margin-top: 55px;
       padding-left: 3%;
       padding-right: 3%;
    }
@@ -1997,7 +1999,7 @@ input:required, textarea:required {
    left: 0;
    right: 0;
    position: absolute;
-   margin-top:30px;
+   margin-top: 55px;
    margin-left: auto;
    margin-right:auto;
    border-radius:7px;
