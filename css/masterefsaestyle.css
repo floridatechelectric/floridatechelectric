@@ -234,6 +234,7 @@ a.button {
     .efsae-header-image {
         background: url(../images/header-background.jpg) no-repeat 0px -255px;
         background-size: cover;
+        margin-top: 50px;
     }
 }
 @media screen and (max-width: 1400px)
