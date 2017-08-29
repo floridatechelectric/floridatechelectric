@@ -10,15 +10,13 @@
   <link href="css/events.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/fullcalendar.min.css" rel="stylesheet">
-  <link href="css/fullcalendar.print.min.css" rel="stylesheet">
   <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
   <script src="js/bootstrap.min.js" type="text/javascript"></script>
   <script src="js/bigSlide.js"></script>
-  <script src="js/fixedscroll.js" type="text/javascript"></script>
-  <script src="js/moment.min.js"></script>
-  <!--<script src="js/jquery.min.js"></script>-->
-  <script src="js/fullcalendar.min.js"></script>
+  <link href='fullcalendar.min.css' rel='stylesheet' />
+  <link href='fullcalendar.print.min.css' rel='stylesheet' media='print' />
+  <script src='calendar/moment.min.js'></script>
+  <script src='fullcalendar.min.js'></script>
   <script>
     $(document).ready(function () {
       var bigSlideAPI = ($('.menu-link').bigSlide()).bigSlideAPI;
@@ -34,10 +32,9 @@
         header: {
           left: 'prev,next today',
           center: 'title',
-          right: 'listDay,listWeek,month'
+          right: 'listWeek,month'
         },
         views: {
-          listDay: { buttonText: 'list day' },
           listWeek: { buttonText: 'list week' }
         },
 
@@ -50,70 +47,140 @@
             title: 'Labor Day',
             start: '2017-09-04'
           },
-          //{
-          //title: 'Long Event',
-          //start: '2017-05-07',
-          //end: '2017-05-10'
-          //},
           {
-            id: 999,
             title: 'General Meeting',
             start: '2017-08-28T18:30:00'
           },
           {
-            id: 999,
             title: 'General Meeting',
-            start: '2017-09-11T18:30:00'
+            start: '2017-09-07T18:30:00'
           },
           {
-            id: 999,
+            title: 'Electrical Meeting',
+            start: '2017-08-30T20:00:00'
+          },
+          {
             title: 'General Meeting',
-            start: '2017-09-18T18:30:00'
+            start: '2017-09-14T18:30:00'
           },
           {
-            id: 999,
             title: 'General Meeting',
-            start: '2017-09-25T18:30:00'
+            start: '2017-09-21T18:30:00'
           },
           {
-            id: 999,
             title: 'General Meeting',
-            start: '2017-10-02T18:30:00'
+            start: '2017-09-28T18:30:00'
           },
           {
-            title: 'Conference',
-            start: '2017-05-11',
-            end: '2017-05-13'
+            title: 'General Meeting',
+            start: '2017-10-05T18:30:00'
+          },
+          //School Holidays...
+          {
+            title: 'Fall Break',
+            url: 'http://www.fit.edu/registrar/academic-calendar/',
+            start: '2017-10-09',
+            end: '2017-10-11'
           },
           {
-            title: 'Meeting',
-            start: '2017-05-12T10:30:00',
-            end: '2017-05-12T12:30:00'
+            title: 'Columbus Day',
+            url: 'http://www.fit.edu/registrar/academic-calendar/',
+            start: '2017-10-09'
           },
           {
-            title: 'Lunch',
-            start: '2017-05-12T12:00:00'
+            title: 'Veterans Day',
+            url: 'http://www.fit.edu/registrar/academic-calendar/',
+            start: '2017-11-10'
           },
           {
-            title: 'Meeting',
-            start: '2017-05-12T14:30:00'
+            title: 'Thanksgiving Break',
+            url: 'http://www.fit.edu/registrar/academic-calendar/',
+            start: '2017-11-22',
+            end: '2017-11-25'
           },
           {
-            title: 'Happy Hour',
-            start: '2017-05-12T17:30:00'
+            title: 'Study Days',
+            url: 'http://www.fit.edu/registrar/academic-calendar/',
+            start: '2017-12-07',
+            end: '2017-12-09'
           },
           {
-            title: 'Dinner',
-            start: '2017-05-12T20:00:00'
+            title: 'Final Exams',
+            url: 'http://www.fit.edu/registrar/academic-calendar/',
+            start: '2017-12-11',
+            end: '2017-12-16'
           },
           {
-            title: 'Birthday Party',
-            start: '2017-05-13T07:00:00'
+            title: 'Fall Commencement',
+            url: 'http://www.fit.edu/registrar/academic-calendar/',
+            start: '2017-12-16'
           },
           {
-            title: 'Click for Google',
-            url: 'http://google.com/',
-            start: '2017-05-28'
+            title: 'Winter Break',
+            url: 'http://www.fit.edu/registrar/academic-calendar/',
+            start: '2017-12-17',
+            end: '2018-01-08'
+          },
+          {
+            title: 'Classes Begin',
+            url: 'http://www.fit.edu/registrar/academic-calendar/',
+            start: '2018-01-08'
+          },
+          {
+            title: 'MLK Jr. Day',
+            url: 'http://www.fit.edu/registrar/academic-calendar/',
+            start: '2018-01-15'
+          },
+          {
+            title: 'Presidents Day',
+            url: 'http://www.fit.edu/registrar/academic-calendar/',
+            start: '2018-02-15'
+          },
+          {
+            title: 'Spring Break',
+            url: 'http://www.fit.edu/registrar/academic-calendar/',
+            start: '2018-03-05',
+            end: '2018-03-10'
+          },
+          {
+            title: 'Study Days',
+            url: 'http://www.fit.edu/registrar/academic-calendar/',
+            start: '2018-04-26',
+            end: '2018-04-28'
+          },
+          {
+            title: 'Final Exams',
+            url: 'http://www.fit.edu/registrar/academic-calendar/',
+            start: '2018-04-30',
+            end: '2018-05-05'
+          },
+          {
+            title: 'Spring Commencement',
+            url: 'http://www.fit.edu/registrar/academic-calendar/',
+            start: '2018-05-05'
+          },
+          //SAE Dates
+          {
+            title: 'SAE Michigan',
+            url: 'http://students.sae.org/cds/formulaseries/fsae/',
+            start: '2018-05-09',
+            end: '2018-05-13'
+          },
+          {
+            title: 'SAE Lincoln',
+            url: 'http://students.sae.org/cds/formulaseries/electric/',
+            start: '2018-06-20',
+            end: '2018-06-24'
+          },
+          {
+            title: 'SAE Registration',
+            url: 'http://fsaeonline.com/',
+            start: '2017-10-04T10:00:00'
+          },
+          {
+            title: 'Registration Closes',
+            url: 'http://fsaeonline.com/',
+            start: '2017-11-13T10:00:00'
           }
         ]
       });
@@ -183,10 +250,10 @@
             <a href="https://www.linkedin.com"><i class="icon3"></i></a>
           </div>
           <div class="profile-menu text-center">
-            <a class="menu-close button hvr-shutter-out-horizontal" href="#rules">Rules and Forms</a>
+            <a class="menu-close button hvr-shutter-out-horizontal" href="http://students.sae.org/cds/formulaseries/">Competition pages</a>
             <a class="menu-close button hvr-shutter-out-horizontal stopscroll" href="#documents">2017 Documents</a>
-            <a class="menu-close button hvr-shutter-out-horizontal stopscroll" href="#reference">2007 Reference</a>
-            <a class="menu-close button hvr-shutter-out-horizontal stopscroll" href="#external">External Links</a>
+            <a class="menu-close button hvr-shutter-out-horizontal stopscroll" href="facebook.com/FITFormulaElectric">Facebook Page</a>
+            <a class="menu-close button hvr-shutter-out-horizontal stopscroll" href="https://join.slack.com/t/floridatech-formula-e/shared_invite/MjMzNDUwNDU1NzAxLTE1MDQwMjIwOTUtYzY4YjYyNzNiMQ">Join Our Slack</a>
             <a class="menu-close button hvr-shutter-out-horizontal stopscroll" href="#newmember">New Member Survey</a>
             <a class="menu-close button hvr-shutter-out-horizontal stopscroll" href="#checkin">Check In</a>
           </div>
@@ -458,9 +525,6 @@
           <!--****************************************************************************************************-->
           <!--****************************************************************************************************-->
           <div class="about" id="about" name="about">
-            <!--<center><h2 class="body-header-2">
-              Organizations
-          </h2></center>-->
             <h2 class="w3-wide w3-center" style="padding-top: 65px; margin-top: 0;">ORGANIZATIONS</h2>
             <div class="about-half equalheight1">
               <center>
@@ -492,9 +556,6 @@
         <!--****************************************************************************************************-->
         <!--****************************************************************************************************-->
         <div class="home" id="home" name="home">
-          <!--<center><h2 class="body-header-2">
-              The Florida Tech SAE Family
-          </h2></center>-->
           <h2 class="w3-wide w3-center" style="padding-top: 65px; margin-top: 0; padding-bottom: 40px;">FLORIDA TECH RACING</h2>
           <div class="col-md-4 home-grid">
             <img src="images/fit-electric.jpg" class="img-responsive center-image" alt="" />
@@ -550,66 +611,6 @@
           <div class="w3-container w3-content w3-padding-64" style="max-width:1500px; margin-left: 3%; margin-right: 3%;">
             <h2 class="w3-wide w3-center">UPCOMING EVENTS</h2>
             <div id='calendar'></div>
-            <!--
-      <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">August <span class="w3-badge w3-right w3-margin-right">2</span></li>
-        <li class="w3-padding">September <span class="w3-badge w3-right w3-margin-right">3</span></li>
-        <li class="w3-padding">October <span class="w3-badge w3-right w3-margin-right">3</span></li>
-      </ul>
-
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="images/sae-showcase.jpg" alt="Showcase" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white" style="margin-top: 5px;">
-            <center><p style="margin-top: 5px; margin-bottom: 5px;"><b>2017 Organization Fair</b></p></center>
-            <center><p class="w3-opacity">Thu Aug 17 2017</p></center>
-            <p>Come meet the team at our booth during Florida Tech's 2017 Organization Fair!</p>
-            <button class="w3-button hvr-shutter-out-horizontal w3-margin-bottom w3-black" onclick="location.href='https://www.facebook.com/events/122161581753693';" value="Facebook">Details</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="images/general-meeting-2.jpg" alt="General Meeting 2" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white" style="margin-top: 5px;">
-            <center><p style="margin-top: 5px; margin-bottom: 5px;"><b>Fall Introduction Meeting</b></p></center>
-            <center><p class="w3-opacity">Mon Aug 28 2017</p></center>
-            <p>Meet the team and get more details on what to expect throughout the school year.</p>
-            <button class="w3-button hvr-shutter-out-horizontal w3-margin-bottom w3-black" onclick="location.href='https://www.facebook.com/events/109547729746359';" value="Facebook">Details</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="images/general-meeting.jpg" alt="General Meeting" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white" style="margin-top: 5px;">
-            <center><p style="margin-top: 5px; margin-bottom: 5px;"><b>Fall Meeting 2</b></p></center>
-            <center><p class="w3-opacity">Mon Sep 4 2017</p></center>
-            <p>General member meeting, open to all students. Part selections will be finalized.</p>
-            <button class="w3-button hvr-shutter-out-horizontal w3-margin-bottom w3-black" onclick="location.href='https://www.facebook.com/events/738831922982259';" value="Facebook">Details</button>
-          </div>
-        </div>
-        -->
-            <!--ADD AFTER ORGFAIR REMOVED-->
-            <!--
-		<div class="w3-third w3-margin-bottom">
-          <img src="images/general-meeting.jpg" alt="General Meeting" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white" style="margin-top: 5px;">
-            <center><p style="margin-top: 5px; margin-bottom: 5px;"><b>Fall Meeting 3</b></p></center>
-            <center><p class="w3-opacity">Mon Sep 11 2017</p></center>
-            <p>General member meeting, open to all students. Focus will be on system diagram.</p>
-            <button class="w3-button hvr-shutter-out-horizontal w3-margin-bottom w3-black" onclick="location.href='https://www.facebook.com/events/1429536970470161';" value="Facebook">Details</button>
-          </div>
-        </div>
-      	-->
-            <!--ADD AFTER INTRO MEETING REMOVED-->
-            <!--
-		<div class="w3-third w3-margin-bottom">
-          <img src="images/ev-meetup.jpg" alt="EV Meetup" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white" style="margin-top: 5px;">
-            <center><p style="margin-top: 5px; margin-bottom: 5px;"><b>Space Coast EV Fair</b></p></center>
-            <center><p class="w3-opacity">Sat Sep 16 2017</p></center>
-            <p>Meet and greet with Space Coast Electric Car owners, oppurtunities for sponsorships.</p>
-            <button class="w3-button hvr-shutter-out-horizontal w3-margin-bottom w3-black" onclick="location.href='https://www.facebook.com/events/726538220889562';" value="Facebook">Details</button>
-          </div>
-        </div>
-      	-->
           </div>
         </div>
       </div>
@@ -893,31 +894,6 @@
       <!--****************************************************************************************************-->
       <!--****************************************************************************************************-->
       <!--****************************************************************************************************-->
-      <div class="overlay" id="rules" name="rules">
-        <div class="popup">
-          <div id="documents-holder">
-            <div>
-              <a class="close resumescroll" href="#">&times;</a>
-              <center>
-                <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">Rules and Forms</h1>
-              </center>
-            </div>
-            <div class="about-half" style="text-align: center;">
-              <a class="menu-close button hvr-shutter-out-horizontal" href="#">Document 1</a>
-              <a class="menu-close button hvr-shutter-out-horizontal" href="#">Document 2</a>
-              <a class="menu-close button hvr-shutter-out-horizontal" href="#">Document 3</a>
-            </div>
-            <div class="about-half" style="text-align: center;">
-              <a class="menu-close button hvr-shutter-out-horizontal" href="#">Document 4</a>
-              <a class="menu-close button hvr-shutter-out-horizontal" href="#">Document 5</a>
-              <a class="menu-close button hvr-shutter-out-horizontal" href="#">Document 6</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
       <div class="overlay" id="documents" name="documents">
         <div class="popup">
           <div id="documents-holder">
@@ -1031,257 +1007,6 @@
       </div>
   </div>
 </div>-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <div class="overlay" id="reference" name="reference">
-        <div class="popup">
-          <div id="documents-holder">
-            <div>
-              <a class="close resumescroll" href="#">&times;</a>
-              <center>
-                <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">2007 Documentation</h1>
-              </center>
-            </div>
-            <div class="about-half" style="text-align: center;">
-              <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-pdr-ppt">2007-PDR.ppt </a>
-              <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-fdr-ppt">2007-FDR.ppt</a>
-              <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-final-spec-ppt">2007 Final Specs</a>
-              <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-motor-spec">2007 Motor Spec</a>
-              <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-plc-spec">2007 PLC Spec</a>
-            </div>
-            <div class="about-half" style="text-align: center;">
-              <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-pdr-doc">2007-PDR.doc</a>
-              <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-fdr-doc">2007-FDR.doc</a>
-              <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-sponsorship-doc">2007-SP.doc</a>
-              <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-battery-spec">2007 Battery Spec</a>
-              <a class="menu-close button hvr-shutter-out-horizontal" href="#2007-motor-controller-spec">2007 Controller Spec</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <!--<div class="overlay" id="2007-fdr-ppt" name="2007-fdr-ppt">
-  <div class="popup">
-    <div id="ppt-holder">
-      <div id="ppt-holder-inside">
-        <div>
-          <a class="close resumescroll" href="#">&times;</a>
-          <center><h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">2007 REV FDR</h1></center>
-        </div>
-
-          <iframe src="https://docs.google.com/a/my.fit.edu/presentation/d/e/2PACX-1vQ5A19DgitDENyytpTmbDzWx-3qzLOMwhYlMqgZ_LJz2BrTKl1FQWI0znfbU5AUyQUlP-m08WmssiWW/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="100%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-        </div>
-      
-        <center><a href="docs/2007-fdr-ppt.pdf" style="text-decoration: none!important; margin-bottom: 13px; position: absolute; bottom: 0; font-size: 22px; color: #fff; left: 0; right: 0;">View as PDF</a>
-        </center>
-      </div>
-  </div>
-</div>-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <!--<div class="overlay" id="2007-pdr-ppt" name="2007-pdr-ppt">
-  <div class="popup">
-    <div id="ppt-holder">
-      <div id="ppt-holder-inside">
-        <div>
-          <a class="close resumescroll" href="#">&times;</a>
-          <center><h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">2007 REV PDR</h1></center>
-        </div>
-
-          <iframe src="https://docs.google.com/a/my.fit.edu/presentation/d/e/2PACX-1vQCTvywdG8s1npaogGjUiNNbAiF8z1FS5tBj4RlvNLSfPy_81v9l0fI5cpneh_stIbLclZdZqyjJUHE/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="100%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-        </div>
-      
-        <center><a href="docs/2007-pdr-ppt.pdf" style="text-decoration: none!important; margin-bottom: 13px; position: absolute; bottom: 0; font-size: 22px; color: #fff; left: 0; right: 0;">View as PDF</a>
-        </center>
-      </div>
-  </div>
-</div>-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <!--<div class="overlay" id="2007-fdr-doc" name="2007-fdr-doc">
-  <div class="popup">
-    <div class="document-holder">
-        <div>
-          <a class="close resumescroll" href="#">&times;</a>
-          <center><h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">2007-FDR.doc</h1></center>
-        </div>
-
-        <iframe src="https://docs.google.com/a/my.fit.edu/document/d/e/2PACX-1vTOMlVw64Ux_ZCjGFISPdH2v48u8w-dUt-om5ahVY_P6n5NlW8w3oSzPp9whNASDHrhPLotDNKCEh3Q/pub?embedded=true" style="width:100%; height: calc(100vh - 190px);"></iframe>
-
-      
-        <center><a href="docs/2007-fdr-doc.pdf" style="text-decoration: none!important; margin-bottom: 13px; position: absolute; bottom: 0; font-size: 22px; color: #fff; left: 0; right: 0;">View as PDF</a>
-        </center>
-      </div>
-  </div>
-</div>-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <!--<div class="overlay" id="2007-pdr-doc" name="2007-pdr-doc">
- <div class="popup">
-  <div class="document-holder">
-        <div>
-          <a class="close resumescroll" href="#">&times;</a>
-          <center><h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">2007-PDR.doc</h1></center>
-        </div>
-
-        <iframe src="https://docs.google.com/a/my.fit.edu/document/d/e/2PACX-1vRnZPBH7u0nErYVWOQzQlyNglsnZKdGnKY3JUXbaOCC8iHqT-c0HAMKhxBl3W5WUVNXN6UrxU3tYdfj/pub?embedded=true" style="width:100%; height: calc(100vh - 190px);"></iframe>
-
-      
-        <center><a href="docs/2007-pdr-doc.pdf" style="text-decoration: none!important; margin-bottom: 13px; position: absolute; bottom: 0; font-size: 22px; color: #fff; left: 0; right: 0;">View as PDF</a>
-        </center>
-    </div>
-  </div>
-</div>-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <!--<div class="overlay" id="2007-sponsorship-doc" name="2007-sponsorship-doc">
- <div class="popup">
-  <div class="document-holder">
-        <div>
-          <a class="close resumescroll" href="#">&times;</a>
-          <center><h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">2007-SP.doc</h1></center>
-        </div>
-
-        <iframe src="https://docs.google.com/a/my.fit.edu/document/d/e/2PACX-1vSW9_LvfuZlcNsDHFcfc2_L7N73rGaN0taUOxBgK6Pw57WHJhQDMj-MAJ-oEHryts1vk9wH_pXoA5bl/pub?embedded=true" style="width:100%; height: calc(100vh - 190px);"></iframe>
-
-      
-        <center><a href="docs/2007-sponsorship-package.pdf" style="text-decoration: none!important; margin-bottom: 13px; position: absolute; bottom: 0; font-size: 22px; color: #fff; left: 0; right: 0;">View as PDF</a>
-        </center>
-    </div>
-  </div>
-</div>-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <!--<div class="overlay" id="2007-final-spec-ppt" name="2007-final-spec-ppt">
-  <div class="popup">
-    <div id="ppt-holder">
-      <div id="ppt-holder-inside">
-        <div>
-          <a class="close resumescroll" href="#">&times;</a>
-          <center><h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">2007 Final Specs</h1></center>
-        </div>
-
-          <iframe src="https://docs.google.com/a/my.fit.edu/presentation/d/e/2PACX-1vRt2LdxH4znFhNnYFgRWlU4OCW2576J9JCiLtc75fBdnvemXTigxHxJzt9t_9_0TJe-qkkb5XDFmM5r/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="100%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-        </div>
-      
-        <center><a href="docs/2007-final-spec-ppt.pdf" style="text-decoration: none!important; margin-bottom: 13px; position: absolute; bottom: 0; font-size: 22px; color: #fff; left: 0; right: 0;">View as PDF</a>
-        </center>
-      </div>
-  </div>
-</div>-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <div class="overlay" id="2007-motor-spec" name="2007-motor-spec">
-        <div class="popup">
-          <div class="pdf-holder">
-            <div>
-              <a class="close resumescroll" href="#">&times;</a>
-              <center>
-                <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">2007 Motor Spec</h1>
-              </center>
-            </div>
-            <iframe src="https://drive.google.com/file/d/0B9mrb76GiViaamItS1FTZzRCYzQ/preview" width="100%" height="85%"></iframe>
-          </div>
-          <center><a href="docs/warp-9-motor-spec.pdf" style="text-decoration: none!important; margin-bottom: 23px; position: absolute; bottom: 0; font-size: 22px; color: #fff; left: 0; right: 0;">View as PDF</a>
-          </center>
-        </div>
-      </div>
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <div class="overlay" id="2007-plc-spec" name="2007-plc-spec">
-        <div class="popup">
-          <div class="pdf-holder">
-            <div>
-              <a class="close resumescroll" href="#">&times;</a>
-              <center>
-                <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">2007 PLC Spec</h1>
-              </center>
-            </div>
-            <iframe src="https://drive.google.com/file/d/0B9mrb76GiViaazZUZC1XNlhJZ2c/preview" width="100%" height="85%"></iframe>
-          </div>
-          <center><a href="docs/ezplc-controller-spec.pdf" style="text-decoration: none!important; margin-bottom: 23px; position: absolute; bottom: 0; font-size: 22px; color: #fff; left: 0; right: 0;">View as PDF</a>
-          </center>
-        </div>
-      </div>
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <div class="overlay" id="2007-battery-spec" name="2007-battery-spec">
-        <div class="popup">
-          <div class="pdf-holder">
-            <div>
-              <a class="close resumescroll" href="#">&times;</a>
-              <center>
-                <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">2007 Battery Spec</h1>
-              </center>
-            </div>
-            <iframe src="https://drive.google.com/file/d/0B9mrb76GiViaeTM5UTVHODZVbFk/preview" width="100%" height="85%"></iframe>
-          </div>
-          <center><a href="docs/ANR26650M1-battery-spec.pdf" style="text-decoration: none!important; margin-bottom: 23px; position: absolute; bottom: 0; font-size: 22px; color: #fff; left: 0; right: 0;">View as PDF</a>
-          </center>
-        </div>
-      </div>
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <div class="overlay" id="2007-motor-controller-spec" name="2007-motor-controller-spec">
-        <div class="popup">
-          <div class="pdf-holder">
-            <div>
-              <a class="close resumescroll" href="#">&times;</a>
-              <center>
-                <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">2007 Controller Spec</h1>
-              </center>
-            </div>
-            <iframe src="https://drive.google.com/file/d/0B9mrb76GiViacEJyZlE3ZzdFdDA/preview" width="100%" height="85%"></iframe>
-          </div>
-          <center><a href="docs/zilla-motor-controller-manual.pdf" style="text-decoration: none!important; margin-bottom: 23px; position: absolute; bottom: 0; font-size: 22px; color: #fff; left: 0; right: 0;">View as PDF</a>
-          </center>
-        </div>
-      </div>
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <!--****************************************************************************************************-->
-      <div class="overlay" id="external" name="external">
-        <div class="popup">
-          <div id="documents-holder">
-            <div>
-              <a class="close resumescroll" href="#">&times;</a>
-              <center>
-                <h1 style="color: #FFF; margin-top: 7px; margin-bottom: 20px;">External Links</h1>
-              </center>
-            </div>
-            <div class="about-half" style="text-align: center;">
-              <a class="menu-close button hvr-shutter-out-horizontal" href="facebook.com/FITFormulaElectric">Facebook Page</a>
-              <a class="menu-close button hvr-shutter-out-horizontal" href="https://drive.google.com/open?id=0B5W635TNvpRzSEpNaVQ1NDZWaWM">Google Drive</a>
-              <a class="menu-close button hvr-shutter-out-horizontal" href="#">Link</a>
-              <a class="menu-close button hvr-shutter-out-horizontal" href="#">Link</a>
-            </div>
-            <div class="about-half" style="text-align: center;">
-              <a class="menu-close button hvr-shutter-out-horizontal" href="https://www.facebook.com/groups/1896368480629583">Facebook Group</a>
-              <a class="menu-close button hvr-shutter-out-horizontal" href="http://www.formula-hybrid.org/about/history/2007-formula-hybrid-competition/">2007 Hybrid Results</a>
-              <a class="menu-close button hvr-shutter-out-horizontal" href="#">Link</a>
-              <a class="menu-close button hvr-shutter-out-horizontal" href="#">Link</a>
-            </div>
-          </div>
-        </div>
-      </div>
       <!--****************************************************************************************************-->
       <!--****************************************************************************************************-->
       <!--****************************************************************************************************-->
